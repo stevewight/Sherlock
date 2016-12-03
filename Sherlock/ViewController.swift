@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         prepareDetector()
         setupFilter()
         detectFaces()
-        displayFilteredImage()
+        //displayFilteredImage()
     }
     
     // (self) Methods
@@ -44,10 +44,26 @@ class ViewController: UIViewController {
     
     private func detectFaces() {
         let faces = detector.features(in: coreImage())
+        var mask:CIImage!
         
         for face in faces {
-            print("face: \(face)")
+            let radial = radialImage(face)
+            mask = radial
         }
+        
+        let masked = maskImage(mask)
+        imageView.image = UIImage(ciImage: masked)
+    }
+    
+    private func radialImage(_ face:CIFeature)->CIImage {
+        let radialFilter = FilterFactory.radial(face)
+        return radialFilter.outputImage!
+    }
+    
+    private func maskImage(_ mask:CIImage)->CIImage {
+        let pixellated = filter.outputImage!
+        let blendFilter = FilterFactory.blendMask(pixellated, coreImage(), mask)
+        return blendFilter.outputImage!
     }
 
 }
