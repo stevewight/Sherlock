@@ -44,15 +44,15 @@ class ViewController: UIViewController {
     
     private func detectFaces() {
         let faces = detector.features(in: coreImage())
-        var mask:CIImage!
+        var mask:CIImage = CIImage()
         
         for face in faces {
             let radial = radialImage(face)
-            mask = radial
+            mask = overCompImage(radial, mask)
         }
         
-        let masked = maskImage(mask)
-        imageView.image = UIImage(ciImage: masked)
+        let final = maskImage(mask)
+        imageView.image = UIImage(ciImage: final)
     }
     
     private func radialImage(_ face:CIFeature)->CIImage {
@@ -60,9 +60,18 @@ class ViewController: UIViewController {
         return radialFilter.outputImage!
     }
     
+    private func overCompImage(_ circle:CIImage,_ background:CIImage)->CIImage {
+        let overCompFilter = FilterFactory.overComp(circle, background)
+        return overCompFilter.outputImage!
+    }
+    
     private func maskImage(_ mask:CIImage)->CIImage {
         let pixellated = filter.outputImage!
-        let blendFilter = FilterFactory.blendMask(pixellated, coreImage(), mask)
+        let blendFilter = FilterFactory.blendMask(
+            image: pixellated,
+            background: coreImage(),
+            mask: mask
+        )
         return blendFilter.outputImage!
     }
 
