@@ -30,14 +30,10 @@ class ViewController: UIViewController {
     }
     
     private func setupFilter() {
-        filter = CIFilter(
-            name: "CIPixellate"
-        )
+        filter = FilterFactory.pixellate(coreImage(), 33.0)
     }
     
     private func displayFilteredImage() {
-        filter.setValue(coreImage(), forKey: kCIInputImageKey)
-        filter.setValue(33.0, forKey: kCIInputScaleKey)
         imageView.image = UIImage(ciImage: filter.outputImage!)
     }
     
