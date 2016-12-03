@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareDetector()
+        setupFilter()
         detectFaces()
+        displayFilteredImage()
     }
     
     // (self) Methods
@@ -29,9 +31,14 @@ class ViewController: UIViewController {
     
     private func setupFilter() {
         filter = CIFilter(
-            name: "CIPixellate",
-            withInputParameters: [kCIInputIntensityKey: 0.75]
+            name: "CIPixellate"
         )
+    }
+    
+    private func displayFilteredImage() {
+        filter.setValue(coreImage(), forKey: kCIInputImageKey)
+        filter.setValue(33.0, forKey: kCIInputScaleKey)
+        imageView.image = UIImage(ciImage: filter.outputImage!)
     }
     
     private func coreImage()->CIImage {
