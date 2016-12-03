@@ -9,17 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var detector:CIDetector!
+    var filter:CIFilter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        prepareDetector()
+        detectFaces()
     }
+    
+    // (self) Methods
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func prepareDetector() {
+        detector = DetectorFactory.face()
     }
-
+    
+    private func setupFilter() {
+        filter = CIFilter(
+            name: "CIPixellate",
+            withInputParameters: [kCIInputIntensityKey: 0.75]
+        )
+    }
+    
+    private func coreImage()->CIImage {
+        let image = UIImage(named:"image_1.jpg")!
+        return CIImage(image: image)!
+    }
+    
+    private func detectFaces() {
+        let faces = detector.features(in: coreImage())
+        
+        for face in faces {
+            print("face: \(face)")
+        }
+    }
 
 }
 
