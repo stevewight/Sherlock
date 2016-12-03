@@ -10,14 +10,17 @@ import UIKit
 
 class PixelFace: NSObject {
     
+    var detector:CIDetector!
     var filter:CIFilter!
     var coreImage:CIImage!
     var faceFeatures:[CIFeature]!
     
-    init(_ image:CIImage,_ faces:[CIFeature]) {
-        filter = FilterFactory.pixellate(image, 33.0)
-        coreImage = image
-        faceFeatures = faces
+    init(_ image:UIImage) {
+        super.init()
+        coreImage = CIImage(image: image)
+        prepareDetector()
+        filter = FilterFactory.pixellate(coreImage, 33.0)
+        faceFeatures = detector.features(in: coreImage)
     }
     
     public func pixellate()->UIImage {
@@ -28,6 +31,10 @@ class PixelFace: NSObject {
         }
         let final = maskImage(mask)
         return UIImage(ciImage: final)
+    }
+    
+    private func prepareDetector() {
+        detector = DetectorFactory.face()
     }
     
     private func radialImage(_ face:CIFeature)->CIImage {

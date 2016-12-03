@@ -11,31 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    
-    var detector:CIDetector!
-    var baseImage:CIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareDetector()
-        prepareImage()
-        detectFaces()
+        let baseImage = UIImage(named:"group_stock_2.jpg")!
+        detectFaces(image: baseImage)
     }
     
     // (self) Methods
-
-    private func prepareDetector() {
-        detector = DetectorFactory.face()
-    }
     
-    private func prepareImage() {
-        let image = UIImage(named:"group_stock_2.jpg")!
-        baseImage = CIImage(image: image)!
-    }
-    
-    private func detectFaces() {
-        let faces = detector.features(in: baseImage)
-        let pixelFace = PixelFace(baseImage, faces)
+    private func detectFaces(image:UIImage) {
+        let pixelFace = PixelFace(image)
         imageView.image = pixelFace.pixellate()
     }
 
