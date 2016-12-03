@@ -24,6 +24,7 @@ class FilterFactory: NSObject {
         return filter
     }
     
+    // Get radial from face feature
     class func radial(_ feature:CIFeature)-> CIFilter {
         let x = feature.bounds.midX
         let y = feature.bounds.midY
@@ -44,6 +45,7 @@ class FilterFactory: NSObject {
         return filter
     }
     
+    // For composing the face(radial) to mask
     class func overComp(_ image:CIImage,_ background:CIImage)->CIFilter {
         let filter = CIFilter(name: "CISourceOverCompositing")!
         filter.setValue(image, forKey: "inputImage")

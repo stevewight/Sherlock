@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     private func coreImage()->CIImage {
-        let image = UIImage(named:"image_1.jpg")!
+        let image = UIImage(named:"group_stock_2.jpg")!
         return CIImage(image: image)!
     }
     
