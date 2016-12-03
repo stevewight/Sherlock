@@ -26,21 +26,15 @@ class FilterFactory: NSObject {
     
     // Get radial from face feature
     class func radial(_ feature:CIFeature)-> CIFilter {
-        let x = feature.bounds.midX
-        let y = feature.bounds.midY
-        let radius = min(
-            feature.bounds.width,
-            feature.bounds.height
-        ) / 1.5
-        let color0 = UIColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0)
-        let color1 = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
-        let vector = CIVector(x: x, y: y)
+        let radius = getRadius(feature)
+        let vector = getVector(feature)
+        let colors = getColors()
         
         let filter = CIFilter(name: "CIRadialGradient")!
         filter.setValue(radius, forKey: "inputRadius0")
         filter.setValue(radius + 0.75, forKey: "inputRadius1")
-        filter.setValue(CIColor(color:color0), forKey: "inputColor0")
-        filter.setValue(CIColor(color:color1), forKey: "inputColor1")
+        filter.setValue(colors.first!, forKey: "inputColor0")
+        filter.setValue(colors.last!, forKey: "inputColor1")
         filter.setValue(vector, forKey: "inputCenter")
         return filter
     }
@@ -60,6 +54,35 @@ class FilterFactory: NSObject {
         filter.setValue(background, forKey: "inputBackgroundImage")
         filter.setValue(mask, forKey: "inputMaskImage")
         return filter
+    }
+    
+    private class func getVector(_ feature:CIFeature)->CIVector {
+        let x = feature.bounds.midX
+        let y = feature.bounds.midY
+        return CIVector(x: x, y: y)
+    }
+    
+    private class func getRadius(_ feature:CIFeature)->Float {
+        let rad = min(
+            feature.bounds.width,
+            feature.bounds.height
+        ) / 1.5
+        return Float(rad)
+    }
+    
+    private class func getColors()->[CIColor] {
+        let color0 = UIColor(
+            red: 0.0, green: 1.0,
+            blue: 0.0, alpha: 1.0
+        )
+        let color1 = UIColor(
+            red: 0.0, green: 0.0,
+            blue: 0.0, alpha: 0.0
+        )
+        return [
+            CIColor(color: color0),
+            CIColor(color: color1)
+        ]
     }
     
 }
