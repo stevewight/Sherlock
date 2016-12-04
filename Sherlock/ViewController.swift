@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let baseImage = UIImage(named:"image_4.jpg")!
-        detectFaces(image: baseImage)
+        pixellateFaces(image: baseImage)
     }
     
     // (self) Methods
     
-    private func detectFaces(image:UIImage) {
+    private func pixellateFaces(image:UIImage) {
         let pixelFace = PixelFace(image)
         imageView.image = pixelFace.pixellate()
     }
