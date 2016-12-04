@@ -22,6 +22,7 @@
 		AAECCB921DF3E79E004B7275 /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB911DF3E79E004B7275 /* image_3.jpg */; };
 		AAECCB941DF3E7B8004B7275 /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB931DF3E7B8004B7275 /* image_4.jpg */; };
 		AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */; };
+		AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB971DF4B1E6004B7275 /* Pixelator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AAECCB911DF3E79E004B7275 /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpg; sourceTree = "<group>"; };
 		AAECCB931DF3E7B8004B7275 /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
 		AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceDetector.swift; path = Models/FaceDetector.swift; sourceTree = "<group>"; };
+		AAECCB971DF4B1E6004B7275 /* Pixelator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pixelator.swift; path = Models/Pixelator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */,
 				AAECCB8D1DF35B32004B7275 /* PixelFace.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
+				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */,
+				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
 				AAECCB861DF2AD5C004B7275 /* DetectorFactory.swift in Sources */,
 				AAECCB8E1DF35B32004B7275 /* PixelFace.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,

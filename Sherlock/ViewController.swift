@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     private func pixellateFaces(image:UIImage) {
         let pixelFace = PixelFace(image)
-        imageView.image = pixelFace.pixellate()
+        imageView.image = pixelFace.pixelate()
     }
 
 }
