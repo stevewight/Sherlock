@@ -17,13 +17,15 @@
 		AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */; };
 		AAECCB8A1DF35482004B7275 /* group_stock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB891DF35482004B7275 /* group_stock.jpg */; };
 		AAECCB8C1DF3564B004B7275 /* group_stock_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */; };
-		AAECCB8E1DF35B32004B7275 /* PixelFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB8D1DF35B32004B7275 /* PixelFace.swift */; };
+		AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */; };
 		AAECCB901DF36A40004B7275 /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB8F1DF36A40004B7275 /* image_2.jpg */; };
 		AAECCB921DF3E79E004B7275 /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB911DF3E79E004B7275 /* image_3.jpg */; };
 		AAECCB941DF3E7B8004B7275 /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB931DF3E7B8004B7275 /* image_4.jpg */; };
 		AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */; };
 		AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB971DF4B1E6004B7275 /* Pixelator.swift */; };
 		AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB991DF4C660004B7275 /* FeatureMask.swift */; };
+		AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */; };
+		AAECCB9E1DF4D11C004B7275 /* BaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +41,15 @@
 		AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterFactory.swift; path = Models/FilterFactory.swift; sourceTree = "<group>"; };
 		AAECCB891DF35482004B7275 /* group_stock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_stock.jpg; sourceTree = "<group>"; };
 		AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_stock_2.jpg; sourceTree = "<group>"; };
-		AAECCB8D1DF35B32004B7275 /* PixelFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PixelFace.swift; path = Models/PixelFace.swift; sourceTree = "<group>"; };
+		AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceObscure.swift; path = Models/FaceObscure.swift; sourceTree = "<group>"; };
 		AAECCB8F1DF36A40004B7275 /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
 		AAECCB911DF3E79E004B7275 /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_3.jpg; sourceTree = "<group>"; };
 		AAECCB931DF3E7B8004B7275 /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
 		AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceDetector.swift; path = Models/FaceDetector.swift; sourceTree = "<group>"; };
 		AAECCB971DF4B1E6004B7275 /* Pixelator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pixelator.swift; path = Models/Pixelator.swift; sourceTree = "<group>"; };
 		AAECCB991DF4C660004B7275 /* FeatureMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureMask.swift; path = Models/FeatureMask.swift; sourceTree = "<group>"; };
+		AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crystalizer.swift; path = Models/Crystalizer.swift; sourceTree = "<group>"; };
+		AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFilter.swift; path = Models/BaseFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 			children = (
 				AAECCB851DF2AD5C004B7275 /* DetectorFactory.swift */,
 				AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */,
-				AAECCB8D1DF35B32004B7275 /* PixelFace.swift */,
-				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
-				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
+				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
+				AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */,
+				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
+				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
+				AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 				AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */,
 				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
 				AAECCB861DF2AD5C004B7275 /* DetectorFactory.swift in Sources */,
-				AAECCB8E1DF35B32004B7275 /* PixelFace.swift in Sources */,
+				AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */,
 				AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
+				AAECCB9E1DF4D11C004B7275 /* BaseFilter.swift in Sources */,
+				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

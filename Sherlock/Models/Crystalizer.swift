@@ -1,5 +1,5 @@
 //
-//  Pixelator.swift
+//  Crystalizer.swift
 //  Sherlock
 //
 //  Created by Steve on 12/4/16.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class Pixelator: BaseFilter {
-    
+class Crystalizer: BaseFilter {
+
     override init(_ image:CIImage) {
         super.init(image)
-        filter = FilterFactory.pixellate(coreImage, 33.0)
+        filter = FilterFactory.crystalize(coreImage, 33.0)
     }
     
 }
