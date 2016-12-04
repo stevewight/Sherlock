@@ -14,6 +14,7 @@ class PixelFace: NSObject {
     var detector:CIDetector!
     var filter:CIFilter!
     var faceFeatures:[CIFeature]!
+    let context = CIContext()
     
     init(_ image:UIImage) {
         super.init()
@@ -25,7 +26,11 @@ class PixelFace: NSObject {
     
     public func pixellate()->UIImage {
         let final = maskImage(faceMask())
-        return UIImage(ciImage: final)
+        let cgImage = context.createCGImage(
+            final,
+            from: final.extent
+        )
+        return UIImage(cgImage: cgImage!)
     }
     
     private func faceMask()->CIImage {

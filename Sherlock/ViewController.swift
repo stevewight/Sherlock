@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"group_stock_2.jpg")!
+        let baseImage = UIImage(named:"image_4.jpg")!
         detectFaces(image: baseImage)
     }
     
