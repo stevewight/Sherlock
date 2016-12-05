@@ -10,21 +10,30 @@ import UIKit
 
 class FaceDetector: NSObject {
 
-    private var detector:CIDetector!
     public var faces:[CIFeature]!
+    public var detectBlink:Bool = false
+    public var detectSmile:Bool = false
+    
+    private var detector:CIDetector!
     
     init(_ image:CIImage) {
         super.init()
         prepareDetector()
-        detectFaceFeatures(image)
+        detectFaces(image)
     }
     
     private func prepareDetector() {
         detector = DetectorFactory.face()
     }
     
-    private func detectFaceFeatures(_ image:CIImage) {
-        faces = detector.features(in: image)
+    private func detectFaces(_ image:CIImage) {
+        let options:[String:Bool] = [
+            CIDetectorSmile: detectSmile,
+            CIDetectorEyeBlink: detectBlink
+        ]
+        faces = detector.features(
+            in: image, options: options
+        )
     }
     
 }

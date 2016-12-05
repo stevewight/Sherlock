@@ -109,9 +109,9 @@
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
 				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
 				AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */,
+				AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */,
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
-				AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -380,6 +380,7 @@
 				AAECCB7D1DF243AD004B7275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
