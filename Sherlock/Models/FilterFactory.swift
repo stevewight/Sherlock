@@ -9,20 +9,6 @@
 import UIKit
 
 class FilterFactory: NSObject {
-
-    class func pixellate(_ image:CIImage,_ scale:Double)-> CIFilter {
-        let filter = CIFilter(name: "CIPixellate")!
-        filter.setValue(image, forKey: kCIInputImageKey)
-        filter.setValue(scale, forKey: kCIInputScaleKey)
-        return filter
-    }
-    
-    class func crystalize(_ image:CIImage,_ radius:Double)-> CIFilter {
-        let filter = CIFilter(name: "CICrystallize")!
-        filter.setValue(image, forKey: kCIInputImageKey)
-        filter.setValue(radius, forKey: kCIInputRadiusKey)
-        return filter
-    }
     
     // Get radial from face feature
     class func radial(_ feature:CIFeature)-> CIFilter {

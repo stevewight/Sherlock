@@ -10,9 +10,23 @@ import UIKit
 
 class Pixelator: BaseFilter {
     
+    var inputScale:Double = 33.0
+    
     override init(_ image:CIImage) {
         super.init(image)
-        filter = FilterFactory.pixellate(coreImage, 33.0)
+        setFilter()
+    }
+    
+    init(_ image:CIImage, scale:Double) {
+        super.init(image)
+        inputScale = scale
+        setFilter()
+    }
+    
+    private func setFilter() {
+        filter = CIFilter(name: "CIPixellate")!
+        filter.setValue(coreImage, forKey: kCIInputImageKey)
+        filter.setValue(inputScale, forKey: kCIInputScaleKey)
     }
     
 }

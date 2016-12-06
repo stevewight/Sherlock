@@ -9,10 +9,24 @@
 import UIKit
 
 class Crystalizer: BaseFilter {
+    
+    var inputRadius:Double = 33.0
 
     override init(_ image:CIImage) {
         super.init(image)
-        filter = FilterFactory.crystalize(coreImage, 33.0)
+        setFilter()
+    }
+    
+    init(_ image:CIImage,radius:Double) {
+        super.init(image)
+        inputRadius = radius
+        setFilter()
+    }
+    
+    private func setFilter() {
+        filter = CIFilter(name: "CICrystallize")!
+        filter.setValue(coreImage, forKey: kCIInputImageKey)
+        filter.setValue(inputRadius, forKey: kCIInputRadiusKey)
     }
     
 }
