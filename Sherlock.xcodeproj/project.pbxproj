@@ -13,7 +13,6 @@
 		AAECCB741DF243AD004B7275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB731DF243AD004B7275 /* Assets.xcassets */; };
 		AAECCB771DF243AD004B7275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB751DF243AD004B7275 /* LaunchScreen.storyboard */; };
 		AAECCB7F1DF24961004B7275 /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB7E1DF24961004B7275 /* image_1.jpg */; };
-		AAECCB861DF2AD5C004B7275 /* DetectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB851DF2AD5C004B7275 /* DetectorFactory.swift */; };
 		AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */; };
 		AAECCB8A1DF35482004B7275 /* group_stock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB891DF35482004B7275 /* group_stock.jpg */; };
 		AAECCB8C1DF3564B004B7275 /* group_stock_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */; };
@@ -37,7 +36,6 @@
 		AAECCB761DF243AD004B7275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAECCB781DF243AD004B7275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAECCB7E1DF24961004B7275 /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
-		AAECCB851DF2AD5C004B7275 /* DetectorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetectorFactory.swift; path = Models/DetectorFactory.swift; sourceTree = "<group>"; };
 		AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterFactory.swift; path = Models/FilterFactory.swift; sourceTree = "<group>"; };
 		AAECCB891DF35482004B7275 /* group_stock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_stock.jpg; sourceTree = "<group>"; };
 		AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_stock_2.jpg; sourceTree = "<group>"; };
@@ -89,14 +87,9 @@
 				AAECCB6E1DF243AD004B7275 /* ViewController.swift */,
 				AAECCB701DF243AD004B7275 /* Main.storyboard */,
 				AAECCB731DF243AD004B7275 /* Assets.xcassets */,
+				AAECCBAB1DF642DF004B7275 /* images */,
 				AAECCB751DF243AD004B7275 /* LaunchScreen.storyboard */,
 				AAECCB781DF243AD004B7275 /* Info.plist */,
-				AAECCB7E1DF24961004B7275 /* image_1.jpg */,
-				AAECCB8F1DF36A40004B7275 /* image_2.jpg */,
-				AAECCB911DF3E79E004B7275 /* image_3.jpg */,
-				AAECCB931DF3E7B8004B7275 /* image_4.jpg */,
-				AAECCB891DF35482004B7275 /* group_stock.jpg */,
-				AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */,
 			);
 			path = Sherlock;
 			sourceTree = "<group>";
@@ -104,7 +97,6 @@
 		AAECCB801DF2AB73004B7275 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AAECCB851DF2AD5C004B7275 /* DetectorFactory.swift */,
 				AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */,
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
 				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
@@ -128,6 +120,19 @@
 			children = (
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AAECCBAB1DF642DF004B7275 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCB7E1DF24961004B7275 /* image_1.jpg */,
+				AAECCB8F1DF36A40004B7275 /* image_2.jpg */,
+				AAECCB911DF3E79E004B7275 /* image_3.jpg */,
+				AAECCB931DF3E7B8004B7275 /* image_4.jpg */,
+				AAECCB891DF35482004B7275 /* group_stock.jpg */,
+				AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +216,6 @@
 			files = (
 				AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */,
 				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
-				AAECCB861DF2AD5C004B7275 /* DetectorFactory.swift in Sources */,
 				AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */,
 				AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"image_3.jpg")!
+        let baseImage = UIImage(named:"image_4.jpg")!
         pixellateFaces(image: baseImage)
     }
     
