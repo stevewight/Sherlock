@@ -23,15 +23,18 @@ class FaceDetector: NSObject {
     }
     
     private func prepareDetector() {
-        let options = [
-            CIDetectorAccuracy: CIDetectorAccuracyHigh,
-            CIDetectorAspectRatio: 1.0
-            ] as [String : Any]
         detector = CIDetector(
             ofType: CIDetectorTypeFace,
             context: nil,
-            options: options
+            options: initializeOptions()
         )!
+    }
+    
+    private func initializeOptions()->[String: Any] {
+        return [
+            CIDetectorAccuracy: CIDetectorAccuracyHigh,
+            CIDetectorAspectRatio: 1.0
+        ] as [String : Any]
     }
     
     private func detectFaces(_ image:CIImage) {

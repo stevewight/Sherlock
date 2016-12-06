@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Pixelator: BaseFilter {
+class Pixelator: ObscureFilter {
     
     var inputScale:Double = 33.0
     

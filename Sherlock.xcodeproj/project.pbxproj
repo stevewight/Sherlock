@@ -23,7 +23,7 @@
 		AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB971DF4B1E6004B7275 /* Pixelator.swift */; };
 		AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB991DF4C660004B7275 /* FeatureMask.swift */; };
 		AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */; };
-		AAECCB9E1DF4D11C004B7275 /* BaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */; };
+		AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9D1DF4D11C004B7275 /* ObscureFilter.swift */; };
 		AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */; };
 		AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBAE1DF65975004B7275 /* OverComp.swift */; };
 		AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB01DF659FC004B7275 /* BlendMask.swift */; };
@@ -49,7 +49,7 @@
 		AAECCB971DF4B1E6004B7275 /* Pixelator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pixelator.swift; path = Models/Pixelator.swift; sourceTree = "<group>"; };
 		AAECCB991DF4C660004B7275 /* FeatureMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureMask.swift; path = Models/FeatureMask.swift; sourceTree = "<group>"; };
 		AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crystalizer.swift; path = Models/Crystalizer.swift; sourceTree = "<group>"; };
-		AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFilter.swift; path = Models/BaseFilter.swift; sourceTree = "<group>"; };
+		AAECCB9D1DF4D11C004B7275 /* ObscureFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObscureFilter.swift; path = Models/ObscureFilter.swift; sourceTree = "<group>"; };
 		AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = Models/RadialGradient.swift; sourceTree = "<group>"; };
 		AAECCBAE1DF65975004B7275 /* OverComp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverComp.swift; path = Models/OverComp.swift; sourceTree = "<group>"; };
 		AAECCBB01DF659FC004B7275 /* BlendMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlendMask.swift; path = Models/BlendMask.swift; sourceTree = "<group>"; };
@@ -103,16 +103,10 @@
 		AAECCB801DF2AB73004B7275 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AAECCBB41DF6616B004B7275 /* Filters */,
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
-				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
-				AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */,
-				AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */,
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
-				AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */,
-				AAECCBAE1DF65975004B7275 /* OverComp.swift */,
-				AAECCBB01DF659FC004B7275 /* BlendMask.swift */,
-				AAECCBB21DF65A53004B7275 /* MaskFilter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -142,6 +136,36 @@
 				AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		AAECCBB41DF6616B004B7275 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCBB61DF6656D004B7275 /* ObscureFilters */,
+				AAECCBB51DF6655D004B7275 /* MaskFilters */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+		AAECCBB51DF6655D004B7275 /* MaskFilters */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */,
+				AAECCBAE1DF65975004B7275 /* OverComp.swift */,
+				AAECCBB01DF659FC004B7275 /* BlendMask.swift */,
+				AAECCBB21DF65A53004B7275 /* MaskFilter.swift */,
+			);
+			name = MaskFilters;
+			sourceTree = "<group>";
+		};
+		AAECCBB61DF6656D004B7275 /* ObscureFilters */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
+				AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */,
+				AAECCB9D1DF4D11C004B7275 /* ObscureFilter.swift */,
+			);
+			name = ObscureFilters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +255,7 @@
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
 				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
-				AAECCB9E1DF4D11C004B7275 /* BaseFilter.swift in Sources */,
+				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
 				AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */,

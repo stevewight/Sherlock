@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Crystalizer: BaseFilter {
+class Crystalizer: ObscureFilter {
     
     var inputRadius:Double = 33.0
 

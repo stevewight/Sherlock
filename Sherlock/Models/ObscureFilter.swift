@@ -1,5 +1,5 @@
 //
-//  BaseFilter.swift
+//  ObscureFilter.swift
 //  Sherlock
 //
 //  Created by Steve on 12/4/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseFilter: NSObject {
+class ObscureFilter: NSObject {
 
     let context = CIContext()
     var coreImage:CIImage!

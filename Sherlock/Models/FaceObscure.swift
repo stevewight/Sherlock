@@ -12,13 +12,12 @@ class FaceObscure: NSObject {
     
     var coreImage:CIImage!
     var faceDetector:FaceDetector!
-    var obscureFilter:BaseFilter!
+    var obscureFilter:ObscureFilter!
     
     init(_ image:UIImage) {
         super.init()
         coreImage = CIImage(image: image)
         faceDetector = FaceDetector(coreImage)
-        obscureFilter = Pixelator(coreImage)
     }
     
     public func pixelate()->UIImage {
