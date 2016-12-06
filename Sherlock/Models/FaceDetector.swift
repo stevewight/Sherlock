@@ -43,7 +43,8 @@ class FaceDetector: NSObject {
             CIDetectorEyeBlink: detectBlink
         ]
         faces = detector.features(
-            in: image, options: options
+            in: image,
+            options: options
         )
     }
     

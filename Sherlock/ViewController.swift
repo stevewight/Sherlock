@@ -14,16 +14,23 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"image_4.jpg")!
-        pixellateFaces(image: baseImage)
+        let baseImage = UIImage(named:"group_stock_2.jpg")!
+        imageView.image = baseImage
+        //pixellateFaces()
+        boxFaces()
     }
     
     // (self) Methods
     
-    private func pixellateFaces(image:UIImage) {
-        let faceObscure = FaceObscure(image)
+    private func pixellateFaces() {
+        let faceObscure = FaceObscure(imageView.image!)
         //imageView.image = faceObscure.pixelate()
         imageView.image = faceObscure.crystalize()
+    }
+    
+    private func boxFaces() {
+        let facePainter = FacePaint(imageView)
+        facePainter.box()
     }
 
 }

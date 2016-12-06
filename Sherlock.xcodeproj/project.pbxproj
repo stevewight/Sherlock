@@ -28,6 +28,8 @@
 		AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBAE1DF65975004B7275 /* OverComp.swift */; };
 		AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB01DF659FC004B7275 /* BlendMask.swift */; };
 		AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB21DF65A53004B7275 /* MaskFilter.swift */; };
+		AAECCBB81DF77697004B7275 /* FacePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB71DF77697004B7275 /* FacePaint.swift */; };
+		AAECCBBA1DF77B9C004B7275 /* FaceBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		AAECCBAE1DF65975004B7275 /* OverComp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverComp.swift; path = Models/OverComp.swift; sourceTree = "<group>"; };
 		AAECCBB01DF659FC004B7275 /* BlendMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlendMask.swift; path = Models/BlendMask.swift; sourceTree = "<group>"; };
 		AAECCBB21DF65A53004B7275 /* MaskFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaskFilter.swift; path = Models/MaskFilter.swift; sourceTree = "<group>"; };
+		AAECCBB71DF77697004B7275 /* FacePaint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacePaint.swift; path = Models/FacePaint.swift; sourceTree = "<group>"; };
+		AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceBoxView.swift; path = Views/FaceBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
+				AAECCBB71DF77697004B7275 /* FacePaint.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		AAECCB811DF2AB7A004B7275 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -253,10 +259,12 @@
 				AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
+				AAECCBB81DF77697004B7275 /* FacePaint.swift in Sources */,
 				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
 				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
+				AAECCBBA1DF77B9C004B7275 /* FaceBoxView.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
 				AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */,
 			);
