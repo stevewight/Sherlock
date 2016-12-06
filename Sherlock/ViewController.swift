@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     
     private func pixellateFaces(image:UIImage) {
         let faceObscure = FaceObscure(image)
-        imageView.image = faceObscure.pixelate()
-        //imageView.image = faceObscure.crystalize()
+        //imageView.image = faceObscure.pixelate()
+        imageView.image = faceObscure.crystalize()
     }
 
 }

@@ -13,7 +13,6 @@
 		AAECCB741DF243AD004B7275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB731DF243AD004B7275 /* Assets.xcassets */; };
 		AAECCB771DF243AD004B7275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB751DF243AD004B7275 /* LaunchScreen.storyboard */; };
 		AAECCB7F1DF24961004B7275 /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB7E1DF24961004B7275 /* image_1.jpg */; };
-		AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */; };
 		AAECCB8A1DF35482004B7275 /* group_stock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB891DF35482004B7275 /* group_stock.jpg */; };
 		AAECCB8C1DF3564B004B7275 /* group_stock_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */; };
 		AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */; };
@@ -25,6 +24,10 @@
 		AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB991DF4C660004B7275 /* FeatureMask.swift */; };
 		AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */; };
 		AAECCB9E1DF4D11C004B7275 /* BaseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */; };
+		AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */; };
+		AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBAE1DF65975004B7275 /* OverComp.swift */; };
+		AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB01DF659FC004B7275 /* BlendMask.swift */; };
+		AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB21DF65A53004B7275 /* MaskFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +39,6 @@
 		AAECCB761DF243AD004B7275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAECCB781DF243AD004B7275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAECCB7E1DF24961004B7275 /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
-		AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterFactory.swift; path = Models/FilterFactory.swift; sourceTree = "<group>"; };
 		AAECCB891DF35482004B7275 /* group_stock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_stock.jpg; sourceTree = "<group>"; };
 		AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = group_stock_2.jpg; sourceTree = "<group>"; };
 		AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceObscure.swift; path = Models/FaceObscure.swift; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		AAECCB991DF4C660004B7275 /* FeatureMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureMask.swift; path = Models/FeatureMask.swift; sourceTree = "<group>"; };
 		AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crystalizer.swift; path = Models/Crystalizer.swift; sourceTree = "<group>"; };
 		AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFilter.swift; path = Models/BaseFilter.swift; sourceTree = "<group>"; };
+		AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = Models/RadialGradient.swift; sourceTree = "<group>"; };
+		AAECCBAE1DF65975004B7275 /* OverComp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverComp.swift; path = Models/OverComp.swift; sourceTree = "<group>"; };
+		AAECCBB01DF659FC004B7275 /* BlendMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlendMask.swift; path = Models/BlendMask.swift; sourceTree = "<group>"; };
+		AAECCBB21DF65A53004B7275 /* MaskFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaskFilter.swift; path = Models/MaskFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +103,16 @@
 		AAECCB801DF2AB73004B7275 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AAECCB871DF2C3F0004B7275 /* FilterFactory.swift */,
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
 				AAECCB971DF4B1E6004B7275 /* Pixelator.swift */,
 				AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */,
 				AAECCB9D1DF4D11C004B7275 /* BaseFilter.swift */,
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
+				AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */,
+				AAECCBAE1DF65975004B7275 /* OverComp.swift */,
+				AAECCBB01DF659FC004B7275 /* BlendMask.swift */,
+				AAECCBB21DF65A53004B7275 /* MaskFilter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -214,15 +223,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAECCB881DF2C3F0004B7275 /* FilterFactory.swift in Sources */,
 				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
 				AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */,
 				AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */,
+				AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
+				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
 				AAECCB9E1DF4D11C004B7275 /* BaseFilter.swift in Sources */,
+				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
+				AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

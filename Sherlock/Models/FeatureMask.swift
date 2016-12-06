@@ -36,22 +36,18 @@ class FeatureMask: NSObject {
     }
     
     private func radialImage(_ face:CIFeature)->CIImage {
-        let radialFilter = FilterFactory.radial(face)
-        return radialFilter.outputImage!
+        let radialFIlter = RadialGradient(face)
+        return radialFIlter.output()
     }
     
     private func overCompImage(_ shape:CIImage,_ background:CIImage)->CIImage {
-        let overCompFilter = FilterFactory.overComp(shape, background)
-        return overCompFilter.outputImage!
+        let overCompFilter = OverComp(shape, background)
+        return overCompFilter.output()
     }
     
     private func filterMask(_ mask:CIImage,image:CIImage,filter:CIFilter)->CIImage {
-        let blendFilter = FilterFactory.blendMask(
-            image: filter.outputImage!,
-            background: image,
-            mask: mask
-        )
-        return blendFilter.outputImage!
+        let blendFilter = BlendMask(filter.outputImage!,image,mask)
+        return blendFilter.output()
     }
     
 }
