@@ -115,13 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				AAECCBB41DF6616B004B7275 /* Filters */,
+				AAECCBCC1DF86E86004B7275 /* Framers */,
 				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
-				AAECCBB71DF77697004B7275 /* FaceFramer.swift */,
 				AAECCBC21DF799AB004B7275 /* TextDetector.swift */,
-				AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */,
-				AAECCBC61DF79C44004B7275 /* TextFramer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -184,6 +182,16 @@
 				AAECCB9D1DF4D11C004B7275 /* ObscureFilter.swift */,
 			);
 			name = ObscureFilters;
+			sourceTree = "<group>";
+		};
+		AAECCBCC1DF86E86004B7275 /* Framers */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCBB71DF77697004B7275 /* FaceFramer.swift */,
+				AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */,
+				AAECCBC61DF79C44004B7275 /* TextFramer.swift */,
+			);
+			name = Framers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

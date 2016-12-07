@@ -13,6 +13,7 @@ class FeatureFramer: NSObject {
     var inputImageView:UIImageView!
     var coreImage:CIImage!
     var shapeColor:UIColor = UIColor.red
+    var borderWidth:Double = 3.0
     
     init(_ imageView:UIImageView) {
         super.init()
@@ -27,7 +28,8 @@ class FeatureFramer: NSObject {
             let newBounds = convertPosition(feature, transform: coordTransform)
             let boxView = FaceBoxView(
                 frame: newBounds,
-                color: shapeColor.cgColor
+                color: shapeColor.cgColor,
+                lineWidth: borderWidth
             )
             inputImageView.addSubview(boxView)
         }

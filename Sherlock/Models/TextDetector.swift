@@ -24,7 +24,7 @@ class TextDetector: NSObject {
             ofType: CIDetectorTypeText,
             context: nil,
             options: initializeOptions()
-            )!
+        )!
     }
     
     private func initializeOptions()->[String: Any] {
