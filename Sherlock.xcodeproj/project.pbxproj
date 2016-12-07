@@ -30,6 +30,10 @@
 		AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB21DF65A53004B7275 /* MaskFilter.swift */; };
 		AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB71DF77697004B7275 /* FaceFramer.swift */; };
 		AAECCBBA1DF77B9C004B7275 /* FaceBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */; };
+		AAECCBC31DF799AB004B7275 /* TextDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC21DF799AB004B7275 /* TextDetector.swift */; };
+		AAECCBC51DF79A0D004B7275 /* FeatureFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */; };
+		AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC61DF79C44004B7275 /* TextFramer.swift */; };
+		AAECCBCB1DF79DE7004B7275 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCBCA1DF79DE7004B7275 /* image_6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		AAECCBB21DF65A53004B7275 /* MaskFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaskFilter.swift; path = Models/MaskFilter.swift; sourceTree = "<group>"; };
 		AAECCBB71DF77697004B7275 /* FaceFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceFramer.swift; path = Models/FaceFramer.swift; sourceTree = "<group>"; };
 		AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceBoxView.swift; path = Views/FaceBoxView.swift; sourceTree = "<group>"; };
+		AAECCBC21DF799AB004B7275 /* TextDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextDetector.swift; path = Models/TextDetector.swift; sourceTree = "<group>"; };
+		AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureFramer.swift; path = Models/FeatureFramer.swift; sourceTree = "<group>"; };
+		AAECCBC61DF79C44004B7275 /* TextFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFramer.swift; path = Models/TextFramer.swift; sourceTree = "<group>"; };
+		AAECCBCA1DF79DE7004B7275 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,9 @@
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
 				AAECCBB71DF77697004B7275 /* FaceFramer.swift */,
+				AAECCBC21DF799AB004B7275 /* TextDetector.swift */,
+				AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */,
+				AAECCBC61DF79C44004B7275 /* TextFramer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 				AAECCB8F1DF36A40004B7275 /* image_2.jpg */,
 				AAECCB911DF3E79E004B7275 /* image_3.jpg */,
 				AAECCB931DF3E7B8004B7275 /* image_4.jpg */,
+				AAECCBCA1DF79DE7004B7275 /* image_6.jpg */,
 				AAECCB891DF35482004B7275 /* group_stock.jpg */,
 				AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */,
 			);
@@ -236,6 +248,7 @@
 			files = (
 				AAECCB771DF243AD004B7275 /* LaunchScreen.storyboard in Resources */,
 				AAECCB901DF36A40004B7275 /* image_2.jpg in Resources */,
+				AAECCBCB1DF79DE7004B7275 /* image_6.jpg in Resources */,
 				AAECCB941DF3E7B8004B7275 /* image_4.jpg in Resources */,
 				AAECCB921DF3E79E004B7275 /* image_3.jpg in Resources */,
 				AAECCB7F1DF24961004B7275 /* image_1.jpg in Resources */,
@@ -260,12 +273,15 @@
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
 				AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */,
+				AAECCBC51DF79A0D004B7275 /* FeatureFramer.swift in Sources */,
+				AAECCBC31DF799AB004B7275 /* TextDetector.swift in Sources */,
 				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
 				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
 				AAECCBBA1DF77B9C004B7275 /* FaceBoxView.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
+				AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */,
 				AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

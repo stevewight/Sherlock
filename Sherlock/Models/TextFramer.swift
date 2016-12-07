@@ -1,5 +1,5 @@
 //
-//  FaceFramer.swift
+//  TextFramer.swift
 //  Sherlock
 //
 //  Created by Steve on 12/6/16.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-class FaceFramer: FeatureFramer {
-    
-    var faceDetector:FaceDetector!
+class TextFramer: FeatureFramer {
 
+    var textDetector:TextDetector!
+    
     override init(_ imageView:UIImageView) {
         super.init(imageView)
-        faceDetector = FaceDetector(coreImage)
+        textDetector = TextDetector(coreImage)
     }
     
     public func box() {
-        buildBoxes(features: faceDetector.faces)
+        buildBoxes(features: textDetector.textBlocks)
     }
     
 }
