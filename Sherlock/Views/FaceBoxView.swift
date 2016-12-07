@@ -9,9 +9,17 @@
 import UIKit
 
 class FaceBoxView: UIView {
+    
+    var boxColor:CGColor =  UIColor.red.cgColor
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setUp()
+    }
+    
+    init(frame:CGRect, color:CGColor) {
+        super.init(frame: frame)
+        boxColor = color
         setUp()
     }
     
@@ -22,7 +30,7 @@ class FaceBoxView: UIView {
     
     private func setUp() {
         layer.borderWidth = 3.0
-        layer.borderColor = UIColor.red.cgColor
+        layer.borderColor = boxColor
         backgroundColor = UIColor.clear
     }
 

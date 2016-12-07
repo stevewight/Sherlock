@@ -1,5 +1,5 @@
 //
-//  FacePaint.swift
+//  FaceFramer.swift
 //  Sherlock
 //
 //  Created by Steve on 12/6/16.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class FacePaint: NSObject {
+class FaceFramer: NSObject {
     
     var inputImageView:UIImageView!
     var coreImage:CIImage!
     var faceDetector:FaceDetector!
+    var shapeColor:UIColor = UIColor.red
 
     init(_ imageView:UIImageView) {
         super.init()
@@ -27,7 +28,10 @@ class FacePaint: NSObject {
         for feature in faceDetector.faces {
             let face = feature as! CIFaceFeature
             let newBounds = convertPosition(face, transform: coordTransform)
-            let boxView = FaceBoxView(frame: newBounds)
+            let boxView = FaceBoxView(
+                frame: newBounds,
+                color: shapeColor.cgColor
+            )
             inputImageView.addSubview(boxView)
         }
     }

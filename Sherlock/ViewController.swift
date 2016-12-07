@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let baseImage = UIImage(named:"group_stock_2.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        boxFaces()
+        frameFaces()
     }
     
     // (self) Methods
@@ -28,9 +28,10 @@ class ViewController: UIViewController {
         imageView.image = faceObscure.crystalize()
     }
     
-    private func boxFaces() {
-        let facePainter = FacePaint(imageView)
-        facePainter.box()
+    private func frameFaces() {
+        let faceFramer = FaceFramer(imageView)
+        faceFramer.shapeColor = UIColor.orange
+        faceFramer.box()
     }
 
 }
