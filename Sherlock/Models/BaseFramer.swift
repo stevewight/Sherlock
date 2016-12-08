@@ -50,6 +50,7 @@ class BaseFramer: NSObject {
             lineWidth: borderWidth
         )
         inputImageView.addSubview(boxView)
+        boxView.animateBreath()
     }
     
     private func addRadial(feature:CIFeature) {
@@ -57,6 +58,7 @@ class BaseFramer: NSObject {
             frame: convertPosition(feature)
         )
         inputImageView.addSubview(radialView)
+        radialView.animateBreath()
     }
     
     private func convertCoordSystems()->CGAffineTransform {

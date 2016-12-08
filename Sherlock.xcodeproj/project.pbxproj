@@ -37,6 +37,7 @@
 		AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBD91DF969E8004B7275 /* BaseObscure.swift */; };
 		AAECCBDC1DF96B3D004B7275 /* BaseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */; };
 		AAECCBDE1DFA0874004B7275 /* RadialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBDD1DFA0874004B7275 /* RadialView.swift */; };
+		AAECCBE01DFA1A2D004B7275 /* BaseFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBDF1DFA1A2D004B7275 /* BaseFrameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		AAECCBD91DF969E8004B7275 /* BaseObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = Models/BaseObscure.swift; sourceTree = "<group>"; };
 		AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseDetector.swift; path = Models/BaseDetector.swift; sourceTree = "<group>"; };
 		AAECCBDD1DFA0874004B7275 /* RadialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialView.swift; path = Views/RadialView.swift; sourceTree = "<group>"; };
+		AAECCBDF1DFA1A2D004B7275 /* BaseFrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFrameView.swift; path = Views/BaseFrameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				AAECCBB91DF77B9C004B7275 /* BoxView.swift */,
 				AAECCBDD1DFA0874004B7275 /* RadialView.swift */,
+				AAECCBDF1DFA1A2D004B7275 /* BaseFrameView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
 				AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
+				AAECCBE01DFA1A2D004B7275 /* BaseFrameView.swift in Sources */,
 				AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
 				AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */,

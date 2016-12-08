@@ -8,15 +8,15 @@
 
 import UIKit
 
-class RadialView: UIView {
+class RadialView: BaseFrameView {
 
     var backgroundRingLayer: CAShapeLayer!
     var ringLayer: CAShapeLayer!
     
-    @IBInspectable open var rating: CGFloat = 88.0 {
+    @IBInspectable open var rating: CGFloat = 100.0 {
         didSet { updateLayerProperties() }
     }
-    @IBInspectable var lineWidth: Double = 7.0 {
+    @IBInspectable var lineWidth: Double = 1.0 {
         didSet { updateLayerProperties() }
     }
     

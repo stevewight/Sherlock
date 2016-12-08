@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         let faceFramer = FaceFramer(imageView)
         faceFramer.shapeColor = UIColor.orange
         faceFramer.borderWidth = 1.0
-        //faceFramer.box()
-        faceFramer.radial()
+        faceFramer.box()
+        //faceFramer.radial()
     }
     
     private func frameText() {

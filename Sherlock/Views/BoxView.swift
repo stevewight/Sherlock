@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BoxView: UIView {
+class BoxView: BaseFrameView {
     
     var boxColor:CGColor =  UIColor.red.cgColor
     var borderWidth:Double = 3.0
