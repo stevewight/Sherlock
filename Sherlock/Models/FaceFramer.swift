@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FaceFramer: FeatureFramer {
+class FaceFramer: BaseFramer {
 
     override init(_ imageView:UIImageView) {
         super.init(imageView)

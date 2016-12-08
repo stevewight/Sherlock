@@ -1,5 +1,5 @@
 //
-//  FeatureFramer.swift
+//  BaseFramer.swift
 //  Sherlock
 //
 //  Created by Steve on 12/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeatureFramer: NSObject {
+class BaseFramer: NSObject {
 
     var inputImageView:UIImageView!
     var coreImage:CIImage!
@@ -36,12 +36,8 @@ class FeatureFramer: NSObject {
     }
     
     private func addFrame(feature:CIFeature) {
-        let newBounds = convertPosition(
-            feature,
-            transform: transform
-        )
         let boxView = BoxView(
-            frame: newBounds,
+            frame: convertPosition(feature),
             color: shapeColor.cgColor,
             lineWidth: borderWidth
         )
@@ -54,7 +50,7 @@ class FeatureFramer: NSObject {
         return transform.translatedBy(x: 0, y: -size.height)
     }
     
-    private func convertPosition(_ face:CIFeature, transform:CGAffineTransform)->CGRect {
+    private func convertPosition(_ face:CIFeature)->CGRect {
         
         var faceViewBounds = face.bounds.applying(transform)
         let imageSize = coreImage.extent.size

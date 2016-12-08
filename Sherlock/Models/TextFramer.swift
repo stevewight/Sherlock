@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextFramer: FeatureFramer {
+class TextFramer: BaseFramer {
     
     override init(_ imageView:UIImageView) {
         super.init(imageView)

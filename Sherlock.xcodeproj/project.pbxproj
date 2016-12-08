@@ -31,7 +31,7 @@
 		AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB71DF77697004B7275 /* FaceFramer.swift */; };
 		AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB91DF77B9C004B7275 /* BoxView.swift */; };
 		AAECCBC31DF799AB004B7275 /* TextDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC21DF799AB004B7275 /* TextDetector.swift */; };
-		AAECCBC51DF79A0D004B7275 /* FeatureFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */; };
+		AAECCBC51DF79A0D004B7275 /* BaseFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC41DF79A0D004B7275 /* BaseFramer.swift */; };
 		AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC61DF79C44004B7275 /* TextFramer.swift */; };
 		AAECCBCB1DF79DE7004B7275 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCBCA1DF79DE7004B7275 /* image_6.jpg */; };
 		AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBD91DF969E8004B7275 /* BaseObscure.swift */; };
@@ -65,7 +65,7 @@
 		AAECCBB71DF77697004B7275 /* FaceFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceFramer.swift; path = Models/FaceFramer.swift; sourceTree = "<group>"; };
 		AAECCBB91DF77B9C004B7275 /* BoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoxView.swift; path = Views/BoxView.swift; sourceTree = "<group>"; };
 		AAECCBC21DF799AB004B7275 /* TextDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextDetector.swift; path = Models/TextDetector.swift; sourceTree = "<group>"; };
-		AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureFramer.swift; path = Models/FeatureFramer.swift; sourceTree = "<group>"; };
+		AAECCBC41DF79A0D004B7275 /* BaseFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFramer.swift; path = Models/BaseFramer.swift; sourceTree = "<group>"; };
 		AAECCBC61DF79C44004B7275 /* TextFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFramer.swift; path = Models/TextFramer.swift; sourceTree = "<group>"; };
 		AAECCBCA1DF79DE7004B7275 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
 		AAECCBD91DF969E8004B7275 /* BaseObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = Models/BaseObscure.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				AAECCBB71DF77697004B7275 /* FaceFramer.swift */,
-				AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */,
+				AAECCBC41DF79A0D004B7275 /* BaseFramer.swift */,
 				AAECCBC61DF79C44004B7275 /* TextFramer.swift */,
 			);
 			name = Framers;
@@ -304,7 +304,7 @@
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
 				AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */,
-				AAECCBC51DF79A0D004B7275 /* FeatureFramer.swift in Sources */,
+				AAECCBC51DF79A0D004B7275 /* BaseFramer.swift in Sources */,
 				AAECCBC31DF799AB004B7275 /* TextDetector.swift in Sources */,
 				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
