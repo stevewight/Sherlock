@@ -8,33 +8,19 @@
 
 import UIKit
 
-class TextDetector: NSObject {
+class TextDetector: BaseDetector {
     
     public var textBlocks:[CIFeature]!
-    private var detector:CIDetector!
     
     init(_ image:CIImage) {
-        super.init()
-        prepareDetector()
-        detectText(image)
+        super.init(image, type: CIDetectorTypeText)
     }
     
-    private func prepareDetector() {
-        detector = CIDetector(
-            ofType: CIDetectorTypeText,
-            context: nil,
-            options: initializeOptions()
-        )!
+    override public func features()->[CIFeature] {
+        return textBlocks
     }
     
-    private func initializeOptions()->[String: Any] {
-        return [
-            CIDetectorAccuracy: CIDetectorAccuracyHigh,
-            CIDetectorReturnSubFeatures: true
-            ] as [String: Any]
-    }
-    
-    private func detectText(_ image:CIImage) {
+    override internal func detect(_ image:CIImage) {
         textBlocks = detector.features(in: image)
     }
     

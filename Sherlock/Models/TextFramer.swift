@@ -9,16 +9,10 @@
 import UIKit
 
 class TextFramer: FeatureFramer {
-
-    var textDetector:TextDetector!
     
     override init(_ imageView:UIImageView) {
         super.init(imageView)
-        textDetector = TextDetector(coreImage)
-    }
-    
-    public func box() {
-        buildBoxes(features: textDetector.textBlocks)
+        detector = TextDetector(coreImage)
     }
     
 }

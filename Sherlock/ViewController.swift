@@ -14,11 +14,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"image_4.jpg")!
+        let baseImage = UIImage(named:"image_6.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        frameFaces()
-        //frameText()
+        //frameFaces()
+        frameText()
     }
     
     // (self) Methods

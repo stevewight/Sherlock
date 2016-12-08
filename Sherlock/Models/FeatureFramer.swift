@@ -15,11 +15,16 @@ class FeatureFramer: NSObject {
     var shapeColor:UIColor = UIColor.red
     var borderWidth:Double = 3.0
     var transform:CGAffineTransform!
+    var detector:BaseDetector!
     
     init(_ imageView:UIImageView) {
         super.init()
         inputImageView = imageView
         coreImage = CIImage(image: imageView.image!)
+    }
+    
+    public func box() {
+        buildBoxes(features: detector.features())
     }
     
     internal func buildBoxes(features:[CIFeature]) {
