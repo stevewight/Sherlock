@@ -15,4 +15,8 @@ class FaceFramer: BaseFramer {
         detector = FaceDetector(coreImage)
     }
     
+    public func radial() {
+        buildRadials(features: detector.features())
+    }
+    
 }

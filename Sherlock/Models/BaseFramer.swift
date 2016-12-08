@@ -35,6 +35,14 @@ class BaseFramer: NSObject {
         }
     }
     
+    internal func buildRadials(features:[CIFeature]) {
+        transform = convertCoordSystems()
+        
+        for feature in features {
+            addRadial(feature: feature)
+        }
+    }
+    
     private func addFrame(feature:CIFeature) {
         let boxView = BoxView(
             frame: convertPosition(feature),
@@ -42,6 +50,13 @@ class BaseFramer: NSObject {
             lineWidth: borderWidth
         )
         inputImageView.addSubview(boxView)
+    }
+    
+    private func addRadial(feature:CIFeature) {
+        let radialView = RadialView(
+            frame: convertPosition(feature)
+        )
+        inputImageView.addSubview(radialView)
     }
     
     private func convertCoordSystems()->CGAffineTransform {

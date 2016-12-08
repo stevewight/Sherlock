@@ -36,6 +36,7 @@
 		AAECCBCB1DF79DE7004B7275 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCBCA1DF79DE7004B7275 /* image_6.jpg */; };
 		AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBD91DF969E8004B7275 /* BaseObscure.swift */; };
 		AAECCBDC1DF96B3D004B7275 /* BaseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */; };
+		AAECCBDE1DFA0874004B7275 /* RadialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBDD1DFA0874004B7275 /* RadialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		AAECCBCA1DF79DE7004B7275 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
 		AAECCBD91DF969E8004B7275 /* BaseObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = Models/BaseObscure.swift; sourceTree = "<group>"; };
 		AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseDetector.swift; path = Models/BaseDetector.swift; sourceTree = "<group>"; };
+		AAECCBDD1DFA0874004B7275 /* RadialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialView.swift; path = Views/RadialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				AAECCBB91DF77B9C004B7275 /* BoxView.swift */,
+				AAECCBDD1DFA0874004B7275 /* RadialView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
 				AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */,
 				AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */,
+				AAECCBDE1DFA0874004B7275 /* RadialView.swift in Sources */,
 				AAECCBDC1DF96B3D004B7275 /* BaseDetector.swift in Sources */,
 				AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
