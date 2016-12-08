@@ -14,6 +14,7 @@ class FeatureFramer: NSObject {
     var coreImage:CIImage!
     var shapeColor:UIColor = UIColor.red
     var borderWidth:Double = 3.0
+    var transform:CGAffineTransform!
     
     init(_ imageView:UIImageView) {
         super.init()
@@ -22,17 +23,24 @@ class FeatureFramer: NSObject {
     }
     
     internal func buildBoxes(features:[CIFeature]) {
-        let coordTransform = convertCoordSystems()
+        transform = convertCoordSystems()
         
         for feature in features {
-            let newBounds = convertPosition(feature, transform: coordTransform)
-            let boxView = FaceBoxView(
-                frame: newBounds,
-                color: shapeColor.cgColor,
-                lineWidth: borderWidth
-            )
-            inputImageView.addSubview(boxView)
+            addFrame(feature: feature)
         }
+    }
+    
+    private func addFrame(feature:CIFeature) {
+        let newBounds = convertPosition(
+            feature,
+            transform: transform
+        )
+        let boxView = BoxView(
+            frame: newBounds,
+            color: shapeColor.cgColor,
+            lineWidth: borderWidth
+        )
+        inputImageView.addSubview(boxView)
     }
     
     private func convertCoordSystems()->CGAffineTransform {

@@ -29,11 +29,13 @@
 		AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB01DF659FC004B7275 /* BlendMask.swift */; };
 		AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB21DF65A53004B7275 /* MaskFilter.swift */; };
 		AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB71DF77697004B7275 /* FaceFramer.swift */; };
-		AAECCBBA1DF77B9C004B7275 /* FaceBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */; };
+		AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBB91DF77B9C004B7275 /* BoxView.swift */; };
 		AAECCBC31DF799AB004B7275 /* TextDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC21DF799AB004B7275 /* TextDetector.swift */; };
 		AAECCBC51DF79A0D004B7275 /* FeatureFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */; };
 		AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBC61DF79C44004B7275 /* TextFramer.swift */; };
 		AAECCBCB1DF79DE7004B7275 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCBCA1DF79DE7004B7275 /* image_6.jpg */; };
+		AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBD91DF969E8004B7275 /* BaseObscure.swift */; };
+		AAECCBDC1DF96B3D004B7275 /* BaseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,11 +63,13 @@
 		AAECCBB01DF659FC004B7275 /* BlendMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlendMask.swift; path = Models/BlendMask.swift; sourceTree = "<group>"; };
 		AAECCBB21DF65A53004B7275 /* MaskFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaskFilter.swift; path = Models/MaskFilter.swift; sourceTree = "<group>"; };
 		AAECCBB71DF77697004B7275 /* FaceFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceFramer.swift; path = Models/FaceFramer.swift; sourceTree = "<group>"; };
-		AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceBoxView.swift; path = Views/FaceBoxView.swift; sourceTree = "<group>"; };
+		AAECCBB91DF77B9C004B7275 /* BoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoxView.swift; path = Views/BoxView.swift; sourceTree = "<group>"; };
 		AAECCBC21DF799AB004B7275 /* TextDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextDetector.swift; path = Models/TextDetector.swift; sourceTree = "<group>"; };
 		AAECCBC41DF79A0D004B7275 /* FeatureFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureFramer.swift; path = Models/FeatureFramer.swift; sourceTree = "<group>"; };
 		AAECCBC61DF79C44004B7275 /* TextFramer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFramer.swift; path = Models/TextFramer.swift; sourceTree = "<group>"; };
 		AAECCBCA1DF79DE7004B7275 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_6.jpg; sourceTree = "<group>"; };
+		AAECCBD91DF969E8004B7275 /* BaseObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = Models/BaseObscure.swift; sourceTree = "<group>"; };
+		AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseDetector.swift; path = Models/BaseDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +118,10 @@
 		AAECCB801DF2AB73004B7275 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AAECCBD81DF9693C004B7275 /* Obfuscators */,
+				AAECCBD71DF968B8004B7275 /* Detectors */,
 				AAECCBB41DF6616B004B7275 /* Filters */,
 				AAECCBCC1DF86E86004B7275 /* Framers */,
-				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
-				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
-				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
-				AAECCBC21DF799AB004B7275 /* TextDetector.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -127,7 +129,7 @@
 		AAECCB811DF2AB7A004B7275 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AAECCBB91DF77B9C004B7275 /* FaceBoxView.swift */,
+				AAECCBB91DF77B9C004B7275 /* BoxView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 		AAECCBB41DF6616B004B7275 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
 				AAECCBB61DF6656D004B7275 /* ObscureFilters */,
 				AAECCBB51DF6655D004B7275 /* MaskFilters */,
 			);
@@ -192,6 +195,25 @@
 				AAECCBC61DF79C44004B7275 /* TextFramer.swift */,
 			);
 			name = Framers;
+			sourceTree = "<group>";
+		};
+		AAECCBD71DF968B8004B7275 /* Detectors */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */,
+				AAECCBC21DF799AB004B7275 /* TextDetector.swift */,
+				AAECCBDB1DF96B3D004B7275 /* BaseDetector.swift */,
+			);
+			name = Detectors;
+			sourceTree = "<group>";
+		};
+		AAECCBD81DF9693C004B7275 /* Obfuscators */ = {
+			isa = PBXGroup;
+			children = (
+				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
+				AAECCBD91DF969E8004B7275 /* BaseObscure.swift */,
+			);
+			name = Obfuscators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +299,7 @@
 				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
 				AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */,
 				AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */,
+				AAECCBDC1DF96B3D004B7275 /* BaseDetector.swift in Sources */,
 				AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
@@ -286,8 +309,9 @@
 				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
 				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
+				AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
-				AAECCBBA1DF77B9C004B7275 /* FaceBoxView.swift in Sources */,
+				AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
 				AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */,
 				AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */,

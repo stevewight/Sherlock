@@ -8,11 +8,9 @@
 
 import UIKit
 
-class FaceObscure: NSObject {
+class FaceObscure: BaseObscure {
     
-    var coreImage:CIImage!
     var faceDetector:FaceDetector!
-    var obscureFilter:ObscureFilter!
     
     init(_ image:UIImage) {
         super.init()
@@ -20,17 +18,7 @@ class FaceObscure: NSObject {
         faceDetector = FaceDetector(coreImage)
     }
     
-    public func pixelate()->UIImage {
-        obscureFilter = Pixelator(coreImage)
-        return output()
-    }
-    
-    public func crystalize()->UIImage {
-        obscureFilter = Crystalizer(coreImage)
-        return output()
-    }
-    
-    private func output()->UIImage {
+    internal override func output()->UIImage {
         return obscureFilter.output(
             features: faceDetector.faces!
         )

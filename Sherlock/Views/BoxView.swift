@@ -1,5 +1,5 @@
 //
-//  FaceBoxView.swift
+//  BoxView.swift
 //  Sherlock
 //
 //  Created by Steve on 12/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FaceBoxView: UIView {
+class BoxView: UIView {
     
     var boxColor:CGColor =  UIColor.red.cgColor
     var borderWidth:Double = 3.0
