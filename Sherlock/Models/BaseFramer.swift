@@ -47,7 +47,7 @@ class BaseFramer: NSObject {
         let boxView = BoxView(
             frame: convertPosition(feature),
             color: shapeColor.cgColor,
-            lineWidth: borderWidth
+            width: borderWidth
         )
         inputImageView.addSubview(boxView)
         boxView.animateBreath()
@@ -55,7 +55,9 @@ class BaseFramer: NSObject {
     
     private func addRadial(feature:CIFeature) {
         let radialView = RadialView(
-            frame: convertPosition(feature)
+            frame: convertPosition(feature),
+            color: shapeColor.cgColor,
+            width: borderWidth
         )
         inputImageView.addSubview(radialView)
         radialView.animateBreath()

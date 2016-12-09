@@ -13,11 +13,12 @@ class RadialView: BaseFrameView {
     var backgroundRingLayer: CAShapeLayer!
     var ringLayer: CAShapeLayer!
     
-    @IBInspectable open var rating: CGFloat = 100.0 {
+    public var rating: CGFloat = 100.0 {
         didSet { updateLayerProperties() }
     }
-    @IBInspectable var lineWidth: Double = 1.0 {
-        didSet { updateLayerProperties() }
+    
+    override internal func setUp() {
+       self.layoutSubviews()
     }
     
     override open func layoutSubviews() {
@@ -39,41 +40,46 @@ class RadialView: BaseFrameView {
     func updateLayerProperties() {
         if (ringLayer != nil) {
             ringLayer.strokeEnd = rating
-            ringLayer.strokeColor = UIColor.white.cgColor
+            ringLayer.strokeColor = lineColor
         }
     }
     
     func setUpBackgroundRingLayer() {
-        backgroundRingLayer = CAShapeLayer()
+        backgroundRingLayer = baseRingLayer()
+        backgroundRingLayer.strokeColor = UIColor(
+            white: 0.5,
+            alpha: 0.3
+        ).cgColor
         layer.addSublayer(backgroundRingLayer)
-        
-        let insets = CGFloat(lineWidth/2.0)
-        let rect = bounds.insetBy(dx: insets, dy: insets)
-        let path = UIBezierPath(ovalIn: rect)
-        
-        backgroundRingLayer.path = path.cgPath
-        backgroundRingLayer.fillColor = nil
-        backgroundRingLayer.lineWidth = CGFloat(lineWidth)
-        backgroundRingLayer.strokeColor = UIColor(white: 0.5, alpha: 0.3).cgColor
     }
     
     func setUpRingLayer() {
-        ringLayer = CAShapeLayer()
+        ringLayer = baseRingLayer()
         
-        let innerInsets = CGFloat(lineWidth/2.0)
-        let innerRect = bounds.insetBy(dx: innerInsets, dy: innerInsets)
-        let innerPath = UIBezierPath(ovalIn: innerRect)
-        
-        ringLayer.path = innerPath.cgPath
-        ringLayer.fillColor = nil
-        ringLayer.lineWidth = CGFloat(lineWidth)
-        ringLayer.strokeColor = UIColor.white.cgColor
+        ringLayer.strokeColor = lineColor
         ringLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         ringLayer.transform = CATransform3DRotate(
             ringLayer.transform,
             CGFloat(-M_PI/2.0), 0, 0, 1
         )
         layer.addSublayer(ringLayer)
+    }
+    
+    private func baseRingLayer()->CAShapeLayer {
+        let newLayer = CAShapeLayer()
+        let path = radialPath()
+        
+        newLayer.path = path.cgPath
+        newLayer.fillColor = nil
+        newLayer.lineWidth = CGFloat(lineWidth)
+        
+        return newLayer
+    }
+    
+    private func radialPath()->UIBezierPath {
+        let insets = CGFloat(lineWidth/2.0)
+        let rect = bounds.insetBy(dx: insets, dy: insets)
+        return UIBezierPath(ovalIn: rect)
     }
 
 }

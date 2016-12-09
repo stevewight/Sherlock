@@ -197,8 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				AAECCBB71DF77697004B7275 /* FaceFramer.swift */,
-				AAECCBC41DF79A0D004B7275 /* BaseFramer.swift */,
 				AAECCBC61DF79C44004B7275 /* TextFramer.swift */,
+				AAECCBC41DF79A0D004B7275 /* BaseFramer.swift */,
 			);
 			name = Framers;
 			sourceTree = "<group>";

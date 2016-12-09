@@ -31,10 +31,9 @@ class ViewController: UIViewController {
     
     private func frameFaces() {
         let faceFramer = FaceFramer(imageView)
-        faceFramer.shapeColor = UIColor.orange
-        faceFramer.borderWidth = 1.0
+        faceFramer.shapeColor = UIColor.darkGray
         faceFramer.box()
-        //faceFramer.radial()
+        faceFramer.radial()
     }
     
     private func frameText() {
