@@ -36,15 +36,17 @@ class BaseFrameView: UIView {
     
     public func animateBreath() {
         UIView.animate(
-            withDuration: 0.33,
+            withDuration: 0.66,
             delay: 0.0,
             options: [.autoreverse, .curveEaseInOut, .repeat],
             animations: {
-                self.transform = CGAffineTransform(
-                    scaleX: 1.5,
-                    y: 1.5
+                let rotate = CGAffineTransform(
+                    rotationAngle: CGFloat(Float.pi)
                 )
-        }, completion: nil)
+                self.transform = rotate.scaledBy(x: 1.5, y: 1.5)
+        }, completion: { (success) in
+            
+        })
     }
 
 }

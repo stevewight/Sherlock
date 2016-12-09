@@ -72,6 +72,7 @@ class RadialView: BaseFrameView {
         newLayer.path = path.cgPath
         newLayer.fillColor = nil
         newLayer.lineWidth = CGFloat(lineWidth)
+        newLayer.lineDashPattern = [4.0]
         
         return newLayer
     }
