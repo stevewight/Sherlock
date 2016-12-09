@@ -12,6 +12,7 @@ class BaseObscure: NSObject {
 
     var coreImage:CIImage!
     var obscureFilter:ObscureFilter!
+    var detector:BaseDetector!
     
     public func pixelate()->UIImage {
         obscureFilter = Pixelator(coreImage)
@@ -24,7 +25,9 @@ class BaseObscure: NSObject {
     }
     
     internal func output()->UIImage {
-        preconditionFailure("Must be overridden")
+        return obscureFilter.output(
+            features: detector.features()
+        )
     }
     
 }

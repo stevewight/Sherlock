@@ -10,15 +10,18 @@ import UIKit
 
 class RadialGradient: MaskFilter {
     
+    var feature:CIFeature!
+    
     // Get radial from face feature
-    init(_ feature:CIFeature) {
+    init(_ inputFeature:CIFeature) {
         super.init()
-        setFilter(feature: feature)
+        feature = inputFeature
+        setFilter()
     }
     
-    private func setFilter(feature:CIFeature) {
-        let radius = getRadius(feature)
-        let vector = getVector(feature)
+    private func setFilter() {
+        let radius = getRadius()
+        let vector = getVector()
         let colors = getColors()
         
         filter = CIFilter(name: "CIRadialGradient")!
@@ -29,33 +32,18 @@ class RadialGradient: MaskFilter {
         filter.setValue(vector, forKey: "inputCenter")
     }
     
-    private func getVector(_ feature:CIFeature)->CIVector {
+    private func getVector()->CIVector {
         let x = feature.bounds.midX
         let y = feature.bounds.midY
         return CIVector(x: x, y: y)
     }
     
-    private func getRadius(_ feature:CIFeature)->Float {
+    private func getRadius()->Float {
         let rad = min(
             feature.bounds.width,
             feature.bounds.height
             ) / 1.5
         return Float(rad)
-    }
-    
-    private func getColors()->[CIColor] {
-        let color0 = UIColor(
-            red: 0.0, green: 1.0,
-            blue: 0.0, alpha: 1.0
-        )
-        let color1 = UIColor(
-            red: 0.0, green: 0.0,
-            blue: 0.0, alpha: 0.0
-        )
-        return [
-            CIColor(color: color0),
-            CIColor(color: color1)
-        ]
     }
     
 }

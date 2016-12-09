@@ -14,10 +14,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"image_4.jpg")!
+        let baseImage = UIImage(named:"text_image_1.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        frameFaces()
+        //frameFaces()
+        pixellateText()
         //frameText()
     }
     
@@ -27,6 +28,11 @@ class ViewController: UIViewController {
         let faceObscure = FaceObscure(imageView.image!)
         //imageView.image = faceObscure.pixelate()
         imageView.image = faceObscure.crystalize()
+    }
+    
+    private func pixellateText() {
+        let textObscure = TextObscure(imageView.image!)
+        imageView.image = textObscure.crystalize()
     }
     
     private func frameFaces() {

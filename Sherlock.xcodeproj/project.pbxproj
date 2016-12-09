@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5D72691DFA782700C31AE4 /* RectGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72681DFA782700C31AE4 /* RectGradient.swift */; };
+		AA5D726B1DFA7FB900C31AE4 /* TextObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D726A1DFA7FB900C31AE4 /* TextObscure.swift */; };
+		AA5D726D1DFA823A00C31AE4 /* text_image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D726C1DFA823A00C31AE4 /* text_image_1.jpg */; };
 		AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB6C1DF243AD004B7275 /* AppDelegate.swift */; };
 		AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB6E1DF243AD004B7275 /* ViewController.swift */; };
 		AAECCB721DF243AD004B7275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB701DF243AD004B7275 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA5D72681DFA782700C31AE4 /* RectGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RectGradient.swift; path = Models/RectGradient.swift; sourceTree = "<group>"; };
+		AA5D726A1DFA7FB900C31AE4 /* TextObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextObscure.swift; path = Models/TextObscure.swift; sourceTree = "<group>"; };
+		AA5D726C1DFA823A00C31AE4 /* text_image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text_image_1.jpg; sourceTree = "<group>"; };
 		AAECCB691DF243AD004B7275 /* Sherlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAECCB6C1DF243AD004B7275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAECCB6E1DF243AD004B7275 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,8 +130,8 @@
 			children = (
 				AAECCBD81DF9693C004B7275 /* Obfuscators */,
 				AAECCBD71DF968B8004B7275 /* Detectors */,
-				AAECCBB41DF6616B004B7275 /* Filters */,
 				AAECCBCC1DF86E86004B7275 /* Framers */,
+				AAECCBB41DF6616B004B7275 /* Filters */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 				AAECCB911DF3E79E004B7275 /* image_3.jpg */,
 				AAECCB931DF3E7B8004B7275 /* image_4.jpg */,
 				AAECCBCA1DF79DE7004B7275 /* image_6.jpg */,
+				AA5D726C1DFA823A00C31AE4 /* text_image_1.jpg */,
 				AAECCB891DF35482004B7275 /* group_stock.jpg */,
 				AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */,
 			);
@@ -179,6 +186,7 @@
 				AAECCBAE1DF65975004B7275 /* OverComp.swift */,
 				AAECCBB01DF659FC004B7275 /* BlendMask.swift */,
 				AAECCBB21DF65A53004B7275 /* MaskFilter.swift */,
+				AA5D72681DFA782700C31AE4 /* RectGradient.swift */,
 			);
 			name = MaskFilters;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			children = (
 				AAECCB8D1DF35B32004B7275 /* FaceObscure.swift */,
 				AAECCBD91DF969E8004B7275 /* BaseObscure.swift */,
+				AA5D726A1DFA7FB900C31AE4 /* TextObscure.swift */,
 			);
 			name = Obfuscators;
 			sourceTree = "<group>";
@@ -284,6 +293,7 @@
 			files = (
 				AAECCB771DF243AD004B7275 /* LaunchScreen.storyboard in Resources */,
 				AAECCB901DF36A40004B7275 /* image_2.jpg in Resources */,
+				AA5D726D1DFA823A00C31AE4 /* text_image_1.jpg in Resources */,
 				AAECCBCB1DF79DE7004B7275 /* image_6.jpg in Resources */,
 				AAECCB941DF3E7B8004B7275 /* image_4.jpg in Resources */,
 				AAECCB921DF3E79E004B7275 /* image_3.jpg in Resources */,
@@ -311,12 +321,14 @@
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
 				AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */,
+				AA5D726B1DFA7FB900C31AE4 /* TextObscure.swift in Sources */,
 				AAECCBC51DF79A0D004B7275 /* BaseFramer.swift in Sources */,
 				AAECCBC31DF799AB004B7275 /* TextDetector.swift in Sources */,
 				AAECCBB11DF659FC004B7275 /* BlendMask.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
 				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
 				AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */,
+				AA5D72691DFA782700C31AE4 /* RectGradient.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
 				AAECCBE01DFA1A2D004B7275 /* BaseFrameView.swift in Sources */,
 				AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */,

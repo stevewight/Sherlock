@@ -29,15 +29,25 @@ class FeatureMask: NSObject {
     private func featuresToImage(_ image:CIImage)->CIImage {
         var finalMask = CIImage()
         for feature in features {
-            let radial = radialImage(feature)
-            finalMask = overCompImage(radial, finalMask)
+            var maskedImage = CIImage()
+            if feature.type == CIFeatureTypeFace {
+                maskedImage = radialImage(feature)
+            } else if feature.type == CIFeatureTypeText {
+                maskedImage = rectImage(feature)
+            }
+            finalMask = overCompImage(maskedImage, finalMask)
         }
         return finalMask
     }
     
+    private func rectImage(_ feature:CIFeature)->CIImage {
+        let rectFilter = RectGradient(feature)
+        return rectFilter.output()
+    }
+    
     private func radialImage(_ face:CIFeature)->CIImage {
-        let radialFIlter = RadialGradient(face)
-        return radialFIlter.output()
+        let radialFilter = RadialGradient(face)
+        return radialFilter.output()
     }
     
     private func overCompImage(_ shape:CIImage,_ background:CIImage)->CIImage {
