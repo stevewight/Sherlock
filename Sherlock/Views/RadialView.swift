@@ -9,48 +9,32 @@
 import UIKit
 
 class RadialView: BaseFrameView {
-
-    var ringLayer: CAShapeLayer!
     
     override internal func setUp() {
-       self.layoutSubviews()
+       setUpCircle()
     }
     
-    override open func layoutSubviews() {
-        super.layoutSubviews()
-        setUpRingLayer()
-    }
-    
-    func setUpRingLayer() {
-        ringLayer = baseRingLayer()
+    private func setUpCircle() {
+        let circle = CAShapeLayer()
+        circle.frame = layer.bounds
+        circle.fillColor = nil
+        circle.strokeColor = lineColor
+        circle.lineWidth = CGFloat(lineWidth)
+        circle.lineDashPattern = [4.0]
         
-        ringLayer.frame = layer.bounds
-        ringLayer.strokeEnd = 75.0
-        ringLayer.strokeColor = lineColor
-        ringLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        ringLayer.transform = CATransform3DRotate(
-            ringLayer.transform,
-            CGFloat(-M_PI/2.0), 0, 0, 1
+        let path = circlePath(circle)
+        circle.path = path.cgPath
+        layer.addSublayer(circle)
+    }
+    
+    private func circlePath(_ circle:CAShapeLayer)->UIBezierPath {
+        return UIBezierPath(
+            arcCenter: circle.position,
+            radius: (circle.bounds.size.width/2.0),
+            startAngle: 0.0,
+            endAngle: CGFloat(2.0 * Float.pi),
+            clockwise: true
         )
-        layer.addSublayer(ringLayer)
-    }
-    
-    private func baseRingLayer()->CAShapeLayer {
-        let newLayer = CAShapeLayer()
-        let path = radialPath()
-        
-        newLayer.path = path.cgPath
-        newLayer.fillColor = nil
-        newLayer.lineWidth = CGFloat(lineWidth)
-        newLayer.lineDashPattern = [4.0]
-        
-        return newLayer
-    }
-    
-    private func radialPath()->UIBezierPath {
-        let insets = CGFloat(lineWidth/2.0)
-        let rect = bounds.insetBy(dx: insets, dy: insets)
-        return UIBezierPath(ovalIn: rect)
     }
 
 }
