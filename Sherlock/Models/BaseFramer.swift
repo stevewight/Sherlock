@@ -10,17 +10,21 @@ import UIKit
 
 class BaseFramer: NSObject {
 
-    var inputImageView:UIImageView!
+    var imageView:UIImageView!
     var coreImage:CIImage!
     var shapeColor:UIColor = UIColor.red
     var borderWidth:Double = 3.0
-    var transform:CGAffineTransform!
     var detector:BaseDetector!
+    var converter:CoordConverter!
     
-    init(_ imageView:UIImageView) {
+    init(_ inputImageView:UIImageView) {
         super.init()
-        inputImageView = imageView
+        imageView = inputImageView
         coreImage = CIImage(image: imageView.image!)
+        converter = CoordConverter(
+            coreImage.extent.size,
+            imageView.bounds.size
+        )
     }
     
     public func box() {
@@ -28,66 +32,37 @@ class BaseFramer: NSObject {
     }
     
     internal func buildBoxes(features:[CIFeature]) {
-        transform = convertCoordSystems()
-        
         for feature in features {
             addFrame(feature: feature)
         }
     }
     
     internal func buildRadials(features:[CIFeature]) {
-        transform = convertCoordSystems()
-        
         for feature in features {
             addRadial(feature: feature)
         }
     }
     
     private func addFrame(feature:CIFeature) {
+        let newFrame = converter.convert(feature.bounds)
         let boxView = BoxView(
-            frame: convertPosition(feature),
+            frame: newFrame,
             color: shapeColor.cgColor,
             width: borderWidth
         )
-        inputImageView.addSubview(boxView)
+        imageView.addSubview(boxView)
         //boxView.animateBreath()
     }
     
     private func addRadial(feature:CIFeature) {
+        let newFrame = converter.convert(feature.bounds)
         let radialView = RadialView(
-            frame: convertPosition(feature),
+            frame: newFrame,
             color: shapeColor.cgColor,
             width: borderWidth
         )
-        inputImageView.addSubview(radialView)
+        imageView.addSubview(radialView)
         radialView.animateBreath()
-    }
-    
-    private func convertCoordSystems()->CGAffineTransform {
-        let size = coreImage.extent.size
-        let transform = CGAffineTransform(scaleX: 1, y: -1)
-        return transform.translatedBy(x: 0, y: -size.height)
-    }
-    
-    private func convertPosition(_ face:CIFeature)->CGRect {
-        
-        var faceViewBounds = face.bounds.applying(transform)
-        let imageSize = coreImage.extent.size
-        
-        let viewSize = inputImageView.bounds.size
-        let scale = min(viewSize.width / imageSize.width,
-                        viewSize.height / imageSize.height)
-        let offsetX = (viewSize.width - imageSize.width * scale) / 2
-        let offsetY = (viewSize.height - imageSize.height * scale) / 2
-        
-        faceViewBounds = faceViewBounds.applying(
-            CGAffineTransform(scaleX: scale, y: scale)
-        )
-        
-        faceViewBounds.origin.x += offsetX
-        faceViewBounds.origin.y += offsetY
-        
-        return faceViewBounds
     }
     
 }

@@ -14,11 +14,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"text_image_1.jpg")!
+        let baseImage = UIImage(named:"image_3.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        //frameFaces()
-        pixellateText()
+        frameFaces()
+        //pixellateText()
         //frameText()
     }
     
@@ -39,8 +39,8 @@ class ViewController: UIViewController {
     private func frameFaces() {
         let faceFramer = FaceFramer(imageView)
         faceFramer.shapeColor = UIColor.white
-        //faceFramer.box()
-        faceFramer.radial()
+        faceFramer.box()
+        //faceFramer.radial()
     }
     
     private func frameText() {
