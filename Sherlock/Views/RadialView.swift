@@ -10,12 +10,7 @@ import UIKit
 
 class RadialView: BaseFrameView {
 
-    var backgroundRingLayer: CAShapeLayer!
     var ringLayer: CAShapeLayer!
-    
-    public var rating: CGFloat = 100.0 {
-        didSet { updateLayerProperties() }
-    }
     
     override internal func setUp() {
        self.layoutSubviews()
@@ -23,39 +18,14 @@ class RadialView: BaseFrameView {
     
     override open func layoutSubviews() {
         super.layoutSubviews()
-        
-        if (backgroundRingLayer == nil) {
-            setUpBackgroundRingLayer()
-        }
-        backgroundRingLayer.frame = layer.bounds
-        
-        if (ringLayer == nil) {
-            setUpRingLayer()
-        }
-        ringLayer.frame = layer.bounds
-        
-        updateLayerProperties()
-    }
-    
-    func updateLayerProperties() {
-        if (ringLayer != nil) {
-            ringLayer.strokeEnd = rating
-            ringLayer.strokeColor = lineColor
-        }
-    }
-    
-    func setUpBackgroundRingLayer() {
-        backgroundRingLayer = baseRingLayer()
-        backgroundRingLayer.strokeColor = UIColor(
-            white: 0.5,
-            alpha: 0.3
-        ).cgColor
-        layer.addSublayer(backgroundRingLayer)
+        setUpRingLayer()
     }
     
     func setUpRingLayer() {
         ringLayer = baseRingLayer()
         
+        ringLayer.frame = layer.bounds
+        ringLayer.strokeEnd = 75.0
         ringLayer.strokeColor = lineColor
         ringLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         ringLayer.transform = CATransform3DRotate(
