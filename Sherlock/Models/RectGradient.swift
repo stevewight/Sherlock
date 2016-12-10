@@ -8,20 +8,18 @@
 
 import UIKit
 
-class RectGradient: MaskFilter {
-
-    var feature:CIFeature!
+class RectGradient: GradientMask {
     
     // Get Rect from feature
-    init(_ inputFeature:CIFeature) {
+    init(_ inputBounds:CGRect) {
         super.init()
-        feature = inputFeature
+        bounds = inputBounds
         setFilter()
     }
     
     override public func output() -> CIImage {
         let outImage = filter.outputImage!
-        return outImage.cropping(to: feature.bounds)
+        return outImage.cropping(to: bounds)
     }
     
     private func setFilter() {
@@ -37,11 +35,11 @@ class RectGradient: MaskFilter {
     }
     
     private func getStartVector()->CIVector {
-        return CIVector(cgRect: feature.bounds)
+        return CIVector(cgRect: bounds)
     }
     
     private func getEndVector()->CIVector {
-        return CIVector(cgRect: feature.bounds)
+        return CIVector(cgRect: bounds)
     }
 
 }

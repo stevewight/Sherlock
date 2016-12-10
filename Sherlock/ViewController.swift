@@ -32,7 +32,8 @@ class ViewController: UIViewController {
     
     private func pixellateText() {
         let textObscure = TextObscure(imageView.image!)
-        imageView.image = textObscure.crystalize()
+        //imageView.image = textObscure.crystalize()
+        imageView.image = textObscure.pixelate()
     }
     
     private func frameFaces() {

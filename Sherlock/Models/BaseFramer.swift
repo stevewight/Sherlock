@@ -50,7 +50,7 @@ class BaseFramer: NSObject {
             width: borderWidth
         )
         inputImageView.addSubview(boxView)
-        boxView.animateBreath()
+        //boxView.animateBreath()
     }
     
     private func addRadial(feature:CIFeature) {

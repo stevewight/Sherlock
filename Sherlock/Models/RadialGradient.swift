@@ -8,14 +8,12 @@
 
 import UIKit
 
-class RadialGradient: MaskFilter {
-    
-    var feature:CIFeature!
+class RadialGradient: GradientMask {
     
     // Get radial from face feature
-    init(_ inputFeature:CIFeature) {
+    init(_ inputBounds:CGRect) {
         super.init()
-        feature = inputFeature
+        bounds = inputBounds
         setFilter()
     }
     
@@ -33,15 +31,15 @@ class RadialGradient: MaskFilter {
     }
     
     private func getVector()->CIVector {
-        let x = feature.bounds.midX
-        let y = feature.bounds.midY
+        let x = bounds.midX
+        let y = bounds.midY
         return CIVector(x: x, y: y)
     }
     
     private func getRadius()->Float {
         let rad = min(
-            feature.bounds.width,
-            feature.bounds.height
+            bounds.width,
+            bounds.height
             ) / 1.5
         return Float(rad)
     }

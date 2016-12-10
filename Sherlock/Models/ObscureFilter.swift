@@ -29,7 +29,7 @@ class ObscureFilter: NSObject {
     }
     
     internal func featureMask(_ features:[CIFeature])->CIImage {
-        let masker = FeatureMask(features)
+        let masker = Masker(features)
         return masker.output(filter, coreImage)
     }
     

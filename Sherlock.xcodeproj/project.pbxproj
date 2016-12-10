@@ -10,6 +10,9 @@
 		AA5D72691DFA782700C31AE4 /* RectGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72681DFA782700C31AE4 /* RectGradient.swift */; };
 		AA5D726B1DFA7FB900C31AE4 /* TextObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D726A1DFA7FB900C31AE4 /* TextObscure.swift */; };
 		AA5D726D1DFA823A00C31AE4 /* text_image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D726C1DFA823A00C31AE4 /* text_image_1.jpg */; };
+		AA5D726F1DFB88A000C31AE4 /* text_image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D726E1DFB88A000C31AE4 /* text_image_2.jpg */; };
+		AA5D72711DFBABED00C31AE4 /* MaskFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72701DFBABED00C31AE4 /* MaskFeature.swift */; };
+		AA5D72731DFBBBD900C31AE4 /* GradientMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72721DFBBBD900C31AE4 /* GradientMask.swift */; };
 		AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB6C1DF243AD004B7275 /* AppDelegate.swift */; };
 		AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB6E1DF243AD004B7275 /* ViewController.swift */; };
 		AAECCB721DF243AD004B7275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB701DF243AD004B7275 /* Main.storyboard */; };
@@ -24,7 +27,7 @@
 		AAECCB941DF3E7B8004B7275 /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB931DF3E7B8004B7275 /* image_4.jpg */; };
 		AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */; };
 		AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB971DF4B1E6004B7275 /* Pixelator.swift */; };
-		AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB991DF4C660004B7275 /* FeatureMask.swift */; };
+		AAECCB9A1DF4C660004B7275 /* Masker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB991DF4C660004B7275 /* Masker.swift */; };
 		AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */; };
 		AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB9D1DF4D11C004B7275 /* ObscureFilter.swift */; };
 		AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */; };
@@ -47,6 +50,9 @@
 		AA5D72681DFA782700C31AE4 /* RectGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RectGradient.swift; path = Models/RectGradient.swift; sourceTree = "<group>"; };
 		AA5D726A1DFA7FB900C31AE4 /* TextObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextObscure.swift; path = Models/TextObscure.swift; sourceTree = "<group>"; };
 		AA5D726C1DFA823A00C31AE4 /* text_image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text_image_1.jpg; sourceTree = "<group>"; };
+		AA5D726E1DFB88A000C31AE4 /* text_image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = text_image_2.jpg; sourceTree = "<group>"; };
+		AA5D72701DFBABED00C31AE4 /* MaskFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaskFeature.swift; path = Models/MaskFeature.swift; sourceTree = "<group>"; };
+		AA5D72721DFBBBD900C31AE4 /* GradientMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientMask.swift; path = Models/GradientMask.swift; sourceTree = "<group>"; };
 		AAECCB691DF243AD004B7275 /* Sherlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAECCB6C1DF243AD004B7275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAECCB6E1DF243AD004B7275 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +69,7 @@
 		AAECCB931DF3E7B8004B7275 /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_4.jpg; sourceTree = "<group>"; };
 		AAECCB951DF4AD0D004B7275 /* FaceDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceDetector.swift; path = Models/FaceDetector.swift; sourceTree = "<group>"; };
 		AAECCB971DF4B1E6004B7275 /* Pixelator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pixelator.swift; path = Models/Pixelator.swift; sourceTree = "<group>"; };
-		AAECCB991DF4C660004B7275 /* FeatureMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureMask.swift; path = Models/FeatureMask.swift; sourceTree = "<group>"; };
+		AAECCB991DF4C660004B7275 /* Masker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Masker.swift; path = Models/Masker.swift; sourceTree = "<group>"; };
 		AAECCB9B1DF4D02A004B7275 /* Crystalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Crystalizer.swift; path = Models/Crystalizer.swift; sourceTree = "<group>"; };
 		AAECCB9D1DF4D11C004B7275 /* ObscureFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObscureFilter.swift; path = Models/ObscureFilter.swift; sourceTree = "<group>"; };
 		AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = Models/RadialGradient.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 				AAECCB931DF3E7B8004B7275 /* image_4.jpg */,
 				AAECCBCA1DF79DE7004B7275 /* image_6.jpg */,
 				AA5D726C1DFA823A00C31AE4 /* text_image_1.jpg */,
+				AA5D726E1DFB88A000C31AE4 /* text_image_2.jpg */,
 				AAECCB891DF35482004B7275 /* group_stock.jpg */,
 				AAECCB8B1DF3564B004B7275 /* group_stock_2.jpg */,
 			);
@@ -172,7 +179,8 @@
 		AAECCBB41DF6616B004B7275 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
-				AAECCB991DF4C660004B7275 /* FeatureMask.swift */,
+				AAECCB991DF4C660004B7275 /* Masker.swift */,
+				AA5D72701DFBABED00C31AE4 /* MaskFeature.swift */,
 				AAECCBB61DF6656D004B7275 /* ObscureFilters */,
 				AAECCBB51DF6655D004B7275 /* MaskFilters */,
 			);
@@ -183,10 +191,11 @@
 			isa = PBXGroup;
 			children = (
 				AAECCBAC1DF654A7004B7275 /* RadialGradient.swift */,
+				AA5D72681DFA782700C31AE4 /* RectGradient.swift */,
 				AAECCBAE1DF65975004B7275 /* OverComp.swift */,
 				AAECCBB01DF659FC004B7275 /* BlendMask.swift */,
 				AAECCBB21DF65A53004B7275 /* MaskFilter.swift */,
-				AA5D72681DFA782700C31AE4 /* RectGradient.swift */,
+				AA5D72721DFBBBD900C31AE4 /* GradientMask.swift */,
 			);
 			name = MaskFilters;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 				AAECCB941DF3E7B8004B7275 /* image_4.jpg in Resources */,
 				AAECCB921DF3E79E004B7275 /* image_3.jpg in Resources */,
 				AAECCB7F1DF24961004B7275 /* image_1.jpg in Resources */,
+				AA5D726F1DFB88A000C31AE4 /* text_image_2.jpg in Resources */,
 				AAECCB741DF243AD004B7275 /* Assets.xcassets in Resources */,
 				AAECCB8A1DF35482004B7275 /* group_stock.jpg in Resources */,
 				AAECCB721DF243AD004B7275 /* Main.storyboard in Resources */,
@@ -314,7 +324,7 @@
 			files = (
 				AAECCB981DF4B1E6004B7275 /* Pixelator.swift in Sources */,
 				AAECCB8E1DF35B32004B7275 /* FaceObscure.swift in Sources */,
-				AAECCB9A1DF4C660004B7275 /* FeatureMask.swift in Sources */,
+				AAECCB9A1DF4C660004B7275 /* Masker.swift in Sources */,
 				AAECCBDE1DFA0874004B7275 /* RadialView.swift in Sources */,
 				AAECCBDC1DF96B3D004B7275 /* BaseDetector.swift in Sources */,
 				AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */,
@@ -329,9 +339,11 @@
 				AAECCB9E1DF4D11C004B7275 /* ObscureFilter.swift in Sources */,
 				AAECCBDA1DF969E8004B7275 /* BaseObscure.swift in Sources */,
 				AA5D72691DFA782700C31AE4 /* RectGradient.swift in Sources */,
+				AA5D72731DFBBBD900C31AE4 /* GradientMask.swift in Sources */,
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
 				AAECCBE01DFA1A2D004B7275 /* BaseFrameView.swift in Sources */,
 				AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */,
+				AA5D72711DFBABED00C31AE4 /* MaskFeature.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
 				AAECCBC71DF79C44004B7275 /* TextFramer.swift in Sources */,
 				AAECCBAF1DF65975004B7275 /* OverComp.swift in Sources */,
