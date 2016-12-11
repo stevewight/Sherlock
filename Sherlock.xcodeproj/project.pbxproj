@@ -14,6 +14,8 @@
 		AA5D72711DFBABED00C31AE4 /* MaskFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72701DFBABED00C31AE4 /* MaskFeature.swift */; };
 		AA5D72731DFBBBD900C31AE4 /* GradientMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72721DFBBBD900C31AE4 /* GradientMask.swift */; };
 		AA5D72761DFCA15400C31AE4 /* CoordConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72751DFCA15400C31AE4 /* CoordConverter.swift */; };
+		AA5D72781DFD0DA900C31AE4 /* TriRadialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72771DFD0DA900C31AE4 /* TriRadialView.swift */; };
+		AA5D727B1DFD184800C31AE4 /* SpinnerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727A1DFD184800C31AE4 /* SpinnerAnimation.swift */; };
 		AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB6C1DF243AD004B7275 /* AppDelegate.swift */; };
 		AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECCB6E1DF243AD004B7275 /* ViewController.swift */; };
 		AAECCB721DF243AD004B7275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAECCB701DF243AD004B7275 /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 		AA5D72701DFBABED00C31AE4 /* MaskFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaskFeature.swift; path = Models/MaskFeature.swift; sourceTree = "<group>"; };
 		AA5D72721DFBBBD900C31AE4 /* GradientMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientMask.swift; path = Models/GradientMask.swift; sourceTree = "<group>"; };
 		AA5D72751DFCA15400C31AE4 /* CoordConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoordConverter.swift; path = Models/Helpers/CoordConverter.swift; sourceTree = "<group>"; };
+		AA5D72771DFD0DA900C31AE4 /* TriRadialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriRadialView.swift; path = Views/TriRadialView.swift; sourceTree = "<group>"; };
+		AA5D727A1DFD184800C31AE4 /* SpinnerAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpinnerAnimation.swift; path = Views/Animations/SpinnerAnimation.swift; sourceTree = "<group>"; };
 		AAECCB691DF243AD004B7275 /* Sherlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAECCB6C1DF243AD004B7275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAECCB6E1DF243AD004B7275 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		AA5D72791DFD181A00C31AE4 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D727A1DFD184800C31AE4 /* SpinnerAnimation.swift */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 		AAECCB601DF243AD004B7275 = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +168,11 @@
 		AAECCB811DF2AB7A004B7275 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA5D72791DFD181A00C31AE4 /* Animations */,
 				AAECCBB91DF77B9C004B7275 /* BoxView.swift */,
 				AAECCBDD1DFA0874004B7275 /* RadialView.swift */,
 				AAECCBDF1DFA1A2D004B7275 /* BaseFrameView.swift */,
+				AA5D72771DFD0DA900C31AE4 /* TriRadialView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -341,6 +355,7 @@
 				AAECCBAD1DF654A7004B7275 /* RadialGradient.swift in Sources */,
 				AAECCB6F1DF243AD004B7275 /* ViewController.swift in Sources */,
 				AAECCB961DF4AD0D004B7275 /* FaceDetector.swift in Sources */,
+				AA5D727B1DFD184800C31AE4 /* SpinnerAnimation.swift in Sources */,
 				AAECCBB81DF77697004B7275 /* FaceFramer.swift in Sources */,
 				AA5D726B1DFA7FB900C31AE4 /* TextObscure.swift in Sources */,
 				AAECCBC51DF79A0D004B7275 /* BaseFramer.swift in Sources */,
@@ -354,6 +369,7 @@
 				AAECCBB31DF65A53004B7275 /* MaskFilter.swift in Sources */,
 				AAECCBE01DFA1A2D004B7275 /* BaseFrameView.swift in Sources */,
 				AAECCBBA1DF77B9C004B7275 /* BoxView.swift in Sources */,
+				AA5D72781DFD0DA900C31AE4 /* TriRadialView.swift in Sources */,
 				AA5D72711DFBABED00C31AE4 /* MaskFeature.swift in Sources */,
 				AA5D72761DFCA15400C31AE4 /* CoordConverter.swift in Sources */,
 				AAECCB9C1DF4D02A004B7275 /* Crystalizer.swift in Sources */,
