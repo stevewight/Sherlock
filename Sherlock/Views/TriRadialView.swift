@@ -10,12 +10,10 @@ import UIKit
 
 class TriRadialView: BaseFrameView {
     
-    var outerRing:CAShapeLayer!
-    var middleRing:CAShapeLayer!
-    var innerRing:CAShapeLayer!
+    var rings = [CAShapeLayer]()
     
     override internal func setUp() {
-        setUpCircles()
+        setUpRings()
     }
     
     private func complexSpin(_ circle:CAShapeLayer) {
@@ -33,33 +31,38 @@ class TriRadialView: BaseFrameView {
         animation.pulse()
     }
     
-    private func setUpCircles() {
-        setUpOuterRing()
-        setUpMiddleRing()
-        //setUpInnerRing()
+    private func setUpRings() {
+        setUpRing(0)
+        setUpRing(1)
+        //setUpRing(2)
     }
     
-    private func setUpOuterRing() {
-        outerRing = createCircle()
-        outerRing.lineDashPattern = [1.0]
-        outerRing.path = createPath(outerRing, 0)
-        layer.addSublayer(outerRing)
-        spin(outerRing)
+    private func setUpRing(_ index:Int) {
+        let ring = createCircle()
+        
+        dashLine(ring, index)
+        ring.path = createPath(ring, index)
+        layer.addSublayer(ring)
+        animate(ring,index)
+        rings.insert(ring, at: index)
     }
     
-    private func setUpMiddleRing() {
-        middleRing = createCircle()
-        middleRing.path = createPath(middleRing, 1)
-        layer.addSublayer(middleRing)
-        complexSpin(middleRing)
+    private func dashLine(_ ring:CAShapeLayer,_ index:Int) {
+        if index == 0 {
+            ring.lineDashPattern = [1.0]
+        }
     }
     
-    private func setUpInnerRing() {
-        innerRing = createCircle()
-        //innerRing.lineDashPattern = [4.0]
-        innerRing.path = createPath(innerRing, 2)
-        layer.addSublayer(innerRing)
-        pulse(innerRing)
+    private func animate(_ circle:CAShapeLayer,_ index:Int) {
+        switch index {
+        case 0:
+            spin(circle)
+        case 1:
+            complexSpin(circle)
+        case 2:
+            pulse(circle)
+        default: break
+        }
     }
     
     private func createCircle()->CAShapeLayer {
