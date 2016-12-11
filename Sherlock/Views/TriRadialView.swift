@@ -42,16 +42,14 @@ class TriRadialView: BaseFrameView {
     private func setUpOuterRing() {
         outerRing = createCircle()
         outerRing.lineDashPattern = [1.0]
-        let path = outerRingPath(outerRing)
-        outerRing.path = path.cgPath
+        outerRing.path = createPath(outerRing, 0)
         layer.addSublayer(outerRing)
         spin(outerRing)
     }
     
     private func setUpMiddleRing() {
         middleRing = createCircle()
-        let path = middleRingPath(middleRing)
-        middleRing.path = path.cgPath
+        middleRing.path = createPath(middleRing, 1)
         layer.addSublayer(middleRing)
         complexSpin(middleRing)
     }
@@ -59,8 +57,7 @@ class TriRadialView: BaseFrameView {
     private func setUpInnerRing() {
         innerRing = createCircle()
         //innerRing.lineDashPattern = [4.0]
-        let path = innerRingPath(innerRing)
-        innerRing.path = path.cgPath
+        innerRing.path = createPath(innerRing, 2)
         layer.addSublayer(innerRing)
         pulse(innerRing)
     }
@@ -75,47 +72,25 @@ class TriRadialView: BaseFrameView {
         return circle
     }
     
-    private func innerRingPath(_ circle:CAShapeLayer)->UIBezierPath {
+    private func createPath(_ circle:CAShapeLayer,_ index:Int)->CGPath {
         let startAngel = CGFloat(-M_PI_2)
         let endAngel = startAngel + CGFloat(M_PI * 2)
-        var radius = circle.bounds.size.width/2.0
-        radius -= (CGFloat(lineWidth) * 2) + 4.0
+        let circleWidth = circle.bounds.size.width
         
         return UIBezierPath(
             arcCenter: circle.position,
-            radius: radius,
+            radius: radius(index, width: circleWidth),
             startAngle: startAngel,
             endAngle: endAngel,
             clockwise: true
-        )
+        ).cgPath
     }
     
-    private func middleRingPath(_ circle:CAShapeLayer)->UIBezierPath {
-        let startAngel = CGFloat(-M_PI_2)
-        let endAngel = startAngel + CGFloat(M_PI * 2)
-        var radius = circle.bounds.size.width/2.0
-        radius -= CGFloat(lineWidth) + 2.0
-        
-        return UIBezierPath(
-            arcCenter: circle.position,
-            radius: radius,
-            startAngle: startAngel,
-            endAngle: endAngel,
-            clockwise: true
-        )
-    }
-    
-    private func outerRingPath(_ circle:CAShapeLayer)->UIBezierPath {
-        let startAngel = CGFloat(-M_PI_2)
-        let endAngel = startAngel + CGFloat(M_PI * 2)
-        
-        return UIBezierPath(
-            arcCenter: circle.position,
-            radius: (circle.bounds.size.width/2.0),
-            startAngle: startAngel,
-            endAngle: endAngel,
-            clockwise: true
-        )
+    private func radius(_ index:Int, width:CGFloat)->CGFloat {
+        var baseRad = Int(width)/2
+        let reduction = (Int(lineWidth) * index) + (2 * index)
+        baseRad -= reduction
+        return CGFloat(baseRad)
     }
 
 }
