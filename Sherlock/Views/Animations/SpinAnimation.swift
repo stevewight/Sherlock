@@ -1,5 +1,5 @@
 //
-//  SpinnerAnimation.swift
+//  SpinAnimation.swift
 //  Sherlock
 //
 //  Created by Steve on 12/10/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpinnerAnimate: NSObject {
+class SpinAnimate: NSObject {
     
     var circle:CAShapeLayer!
     
@@ -23,7 +23,7 @@ class SpinnerAnimate: NSObject {
         circle.add(rotateClockwise(), forKey: "rotate")
     }
     
-    public func rotateClockwise() {
+    public func rotate() {
         circle.add(rotateClockwise(), forKey: "rotateClockwise")
     }
     

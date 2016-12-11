@@ -17,17 +17,17 @@ class TriRadialView: BaseFrameView {
     }
     
     private func complexSpin(_ circle:CAShapeLayer) {
-        let animation = SpinnerAnimate(circle)
+        let animation = SpinAnimate(circle)
         animation.complex()
     }
     
     private func spin(_ circle:CAShapeLayer) {
-        let animation = SpinnerAnimate(circle)
-        animation.rotateClockwise()
+        let animation = SpinAnimate(circle)
+        animation.rotate()
     }
     
     private func pulse(_ circle:CAShapeLayer) {
-        let animation = SpinnerAnimate(circle)
+        let animation = SpinAnimate(circle)
         animation.pulse()
     }
     
