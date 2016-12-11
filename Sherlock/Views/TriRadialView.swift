@@ -34,7 +34,7 @@ class TriRadialView: BaseFrameView {
     private func setUpRings() {
         setUpRing(0)
         setUpRing(1)
-        //setUpRing(2)
+        setUpRing(2)
     }
     
     private func setUpRing(_ index:Int) {
@@ -48,20 +48,19 @@ class TriRadialView: BaseFrameView {
     }
     
     private func dashLine(_ ring:CAShapeLayer,_ index:Int) {
-        if index == 0 {
+        if index == 1 {
             ring.lineDashPattern = [1.0]
         }
     }
     
     private func animate(_ circle:CAShapeLayer,_ index:Int) {
         switch index {
-        case 0:
-            spin(circle)
         case 1:
-            complexSpin(circle)
+            spin(circle)
         case 2:
-            pulse(circle)
-        default: break
+            complexSpin(circle)
+        default:
+            break
         }
     }
     

@@ -11,7 +11,7 @@ import UIKit
 class BaseFrameView: UIView {
 
     var lineColor:CGColor =  UIColor.red.cgColor
-    var lineWidth:Double = 1.0
+    var lineWidth:Double = 1.5
     
     override init(frame: CGRect) {
         super.init(frame: frame)
