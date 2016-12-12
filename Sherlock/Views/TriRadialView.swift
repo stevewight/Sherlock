@@ -14,6 +14,8 @@ class TriRadialView: BaseFrameView {
     
     override internal func setUp() {
         setUpRings()
+        setUpAnimations()
+        setUpDashes()
     }
     
     private func complexSpin(_ circle:CAShapeLayer) {
@@ -37,31 +39,20 @@ class TriRadialView: BaseFrameView {
         setUpRing(2)
     }
     
+    private func setUpAnimations() {
+        spin(rings[1])
+        complexSpin(rings[2])
+    }
+    
+    private func setUpDashes() {
+        rings[1].lineDashPattern = [1.0]
+    }
+    
     private func setUpRing(_ index:Int) {
         let ring = createCircle()
-        
-        dashLine(ring, index)
         ring.path = createPath(ring, index)
         layer.addSublayer(ring)
-        animate(ring,index)
         rings.insert(ring, at: index)
-    }
-    
-    private func dashLine(_ ring:CAShapeLayer,_ index:Int) {
-        if index == 1 {
-            ring.lineDashPattern = [1.0]
-        }
-    }
-    
-    private func animate(_ circle:CAShapeLayer,_ index:Int) {
-        switch index {
-        case 1:
-            spin(circle)
-        case 2:
-            complexSpin(circle)
-        default:
-            break
-        }
     }
     
     private func createCircle()->CAShapeLayer {
