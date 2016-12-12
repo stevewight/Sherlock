@@ -51,23 +51,16 @@ class BaseFramer: NSObject {
             width: borderWidth
         )
         imageView.addSubview(boxView)
-        //boxView.animateBreath()
     }
     
     private func addRadial(feature:CIFeature) {
         let newFrame = converter.convert(feature.bounds)
-        let radialView = TriRadialView(
+        let radialView = RadialView(
             frame: newFrame,
             color: shapeColor.cgColor,
             width: borderWidth
         )
-//        let radialView = RadialView(
-//            frame: newFrame,
-//            color: shapeColor.cgColor,
-//            width: borderWidth
-//        )
         imageView.addSubview(radialView)
-        //radialView.animateBreath()
     }
     
 }

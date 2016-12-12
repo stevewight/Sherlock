@@ -15,12 +15,22 @@ class BoxView: BaseFrameView {
     override internal func setUp() {
         setUpBoxes()
         setUpDashes()
+        setUpAnimations()
+    }
+    
+    private func pulse(_ shape:CAShapeLayer) {
+        let animation = SpinAnimate(shape)
+        animation.pulse()
     }
     
     private func setUpBoxes() {
         setUpBox(0)
         setUpBox(1)
         setUpBox(2)
+    }
+    
+    private func setUpAnimations() {
+        //pulse(boxes[2])
     }
     
     private func setUpDashes() {
