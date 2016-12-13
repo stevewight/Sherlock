@@ -1,5 +1,5 @@
 //
-//  SpinAnimation.swift
+//  SpinAnimate.swift
 //  Sherlock
 //
 //  Created by Steve on 12/10/16.
@@ -74,8 +74,8 @@ class SpinAnimate: NSObject {
     private func heartBeat()->CAAnimation {
         let animation = CABasicAnimation(keyPath: "transform.scale")
         animation.fromValue = 0.0
-        animation.toValue = 1.4
-        animation.duration = 0.8
+        animation.toValue = 1.0
+        animation.duration = 0.6
         animation.repeatCount = MAXFLOAT
         return animation
     }

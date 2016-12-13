@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA5D72761DFCA15400C31AE4 /* CoordConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72751DFCA15400C31AE4 /* CoordConverter.swift */; };
-		AA5D727B1DFD184800C31AE4 /* SpinAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727A1DFD184800C31AE4 /* SpinAnimation.swift */; };
+		AA5D727B1DFD184800C31AE4 /* SpinAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727A1DFD184800C31AE4 /* SpinAnimate.swift */; };
 		AA5D727F1DFE083C00C31AE4 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727C1DFE083C00C31AE4 /* BaseObscure.swift */; };
 		AA5D72801DFE083C00C31AE4 /* FaceObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727D1DFE083C00C31AE4 /* FaceObscure.swift */; };
 		AA5D72811DFE083C00C31AE4 /* TextObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727E1DFE083C00C31AE4 /* TextObscure.swift */; };
@@ -50,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		AA5D72751DFCA15400C31AE4 /* CoordConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoordConverter.swift; path = Models/Helpers/CoordConverter.swift; sourceTree = "<group>"; };
-		AA5D727A1DFD184800C31AE4 /* SpinAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpinAnimation.swift; path = Views/Animations/SpinAnimation.swift; sourceTree = "<group>"; };
+		AA5D727A1DFD184800C31AE4 /* SpinAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpinAnimate.swift; path = Views/Animations/SpinAnimate.swift; sourceTree = "<group>"; };
 		AA5D727C1DFE083C00C31AE4 /* BaseObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = Models/Obfuscators/BaseObscure.swift; sourceTree = "<group>"; };
 		AA5D727D1DFE083C00C31AE4 /* FaceObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaceObscure.swift; path = Models/Obfuscators/FaceObscure.swift; sourceTree = "<group>"; };
 		AA5D727E1DFE083C00C31AE4 /* TextObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextObscure.swift; path = Models/Obfuscators/TextObscure.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		AA5D72791DFD181A00C31AE4 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				AA5D727A1DFD184800C31AE4 /* SpinAnimation.swift */,
+				AA5D727A1DFD184800C31AE4 /* SpinAnimate.swift */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 				AA5D72851DFE088D00C31AE4 /* BaseDetector.swift in Sources */,
 				AA5D72811DFE083C00C31AE4 /* TextObscure.swift in Sources */,
 				AA5D72961DFE0A4100C31AE4 /* ObscureFilter.swift in Sources */,
-				AA5D727B1DFD184800C31AE4 /* SpinAnimation.swift in Sources */,
+				AA5D727B1DFD184800C31AE4 /* SpinAnimate.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
 				AA5D727F1DFE083C00C31AE4 /* BaseObscure.swift in Sources */,
 				AA5D72951DFE0A4100C31AE4 /* Crystalizer.swift in Sources */,

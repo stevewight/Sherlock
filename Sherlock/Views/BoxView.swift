@@ -30,7 +30,7 @@ class BoxView: BaseFrameView {
     }
     
     private func setUpAnimations() {
-        //pulse(boxes[2])
+        pulse(boxes[2])
     }
     
     private func setUpDashes() {
