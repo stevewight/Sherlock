@@ -31,6 +31,10 @@ class SpinAnimate: NSObject {
         circle.add(heartBeat(), forKey: "pulse")
     }
     
+    public func slowPulse() {
+        circle.add(slowHeartBeat(), forKey: "snap")
+    }
+    
     private func endAnimation()->CAAnimation {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = 0
@@ -38,12 +42,7 @@ class SpinAnimate: NSObject {
         animation.duration = 2
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
-        let group = CAAnimationGroup()
-        group.duration = 2.5
-        group.repeatCount = MAXFLOAT
-        group.animations = [animation]
-        
-        return group
+        return addToGroup(animation)
     }
     
     private func startAnimation()->CAAnimation {
@@ -54,12 +53,7 @@ class SpinAnimate: NSObject {
         animation.duration = 2
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
-        let group = CAAnimationGroup()
-        group.duration = 2.5
-        group.repeatCount = MAXFLOAT
-        group.animations = [animation]
-        
-        return group
+        return addToGroup(animation)
     }
     
     private func rotateClockwise()->CAAnimation {
@@ -78,6 +72,24 @@ class SpinAnimate: NSObject {
         animation.duration = 0.6
         animation.repeatCount = MAXFLOAT
         return animation
+    }
+    
+    private func slowHeartBeat()->CAAnimation {
+        let animation = CABasicAnimation(keyPath: "transform.scale")
+        animation.fromValue = 0.7
+        animation.toValue = 1.1
+        animation.duration = 1.8
+        animation.repeatCount = MAXFLOAT
+        return animation
+    }
+    
+    private func addToGroup(_ animation:CAAnimation)->CAAnimation {
+        let group = CAAnimationGroup()
+        group.duration = 2.5
+        group.repeatCount = MAXFLOAT
+        group.animations = [animation]
+        
+        return group
     }
     
 }

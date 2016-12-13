@@ -23,6 +23,11 @@ class BoxView: BaseFrameView {
         animation.pulse()
     }
     
+    private func slowPulse(_ shape:CAShapeLayer) {
+        let animation = SpinAnimate(shape)
+        animation.slowPulse()
+    }
+    
     private func setUpBoxes() {
         setUpBox(0)
         setUpBox(1)
@@ -31,6 +36,7 @@ class BoxView: BaseFrameView {
     
     private func setUpAnimations() {
         pulse(boxes[2])
+        slowPulse(boxes[1])
     }
     
     private func setUpDashes() {
