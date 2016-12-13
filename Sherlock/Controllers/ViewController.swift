@@ -17,9 +17,16 @@ class ViewController: UIViewController {
         let baseImage = UIImage(named:"image_3.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        frameFaces()
+        frameFaces(index:0)
         //pixellateText()
         //frameText()
+    }
+    
+    // @IBAction Methods
+    
+    @IBAction func framerSegmentChanged(_ sender: UISegmentedControl) {
+        imageView.subviews.forEach({ $0.removeFromSuperview() })
+        frameFaces(index: sender.selectedSegmentIndex)
     }
     
     // (self) Methods
@@ -36,12 +43,15 @@ class ViewController: UIViewController {
         imageView.image = textObscure.pixelate()
     }
     
-    private func frameFaces() {
+    private func frameFaces(index:Int) {
         let faceFramer = FaceFramer(imageView)
         faceFramer.shapeColor = UIColor.white
         faceFramer.borderWidth = 1.5
-        faceFramer.box()
-        //faceFramer.radial()
+        if index == 0 {
+            faceFramer.radial()
+        } else {
+            faceFramer.box()
+        }
     }
     
     private func frameText() {
