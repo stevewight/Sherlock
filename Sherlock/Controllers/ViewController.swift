@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var framerIndex = 0
     var color = UIColor.white
-    var width = 1.5
+    var width = 0.5
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +37,12 @@ class ViewController: UIViewController {
     @IBAction func colorSegmentChanged(_ sender: UISegmentedControl) {
         imageView.subviews.forEach({ $0.removeFromSuperview() })
         color = colorWith(index: sender.selectedSegmentIndex)
+        frameFaces()
+    }
+    
+    @IBAction func widthSegmentChanged(_ sender: UISegmentedControl) {
+        imageView.subviews.forEach({ $0.removeFromSuperview() })
+        width = widthWith(index: sender.selectedSegmentIndex)
         frameFaces()
     }
     
@@ -70,6 +76,19 @@ class ViewController: UIViewController {
         textFramer.box()
     }
     
+    private func widthWith(index:Int)->Double {
+        switch index {
+        case 0:
+            return 0.5
+        case 1:
+            return 1.5
+        case 2:
+            return 3.5
+        default:
+            return 1.5
+        }
+    }
+    
     private func colorWith(index:Int)->UIColor {
         switch index {
         case 0:
@@ -79,7 +98,7 @@ class ViewController: UIViewController {
         case 2:
             return UIColor.red
         default:
-            return UIColor.white
+            return UIColor.gray
         }
     }
 

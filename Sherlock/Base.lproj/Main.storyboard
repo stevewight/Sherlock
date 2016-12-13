@@ -36,13 +36,26 @@
                                     <action selector="framerSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pnt-7d-TaF"/>
                                 </connections>
                             </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3l2-hf-ZaW">
+                                <rect key="frame" x="16" y="532" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Thin"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Thick"/>
+                                </segments>
+                                <connections>
+                                    <action selector="widthSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jw9-sQ-oYy"/>
+                                </connections>
+                            </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gU0-Q7-NPT">
-                                <rect key="frame" x="16" y="528" width="343" height="29"/>
+                                <rect key="frame" x="16" y="590" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="White"/>
                                     <segment title="Blue"/>
                                     <segment title="Red"/>
+                                    <segment title="Gray"/>
                                 </segments>
                                 <connections>
                                     <action selector="colorSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e6u-oU-AAp"/>
