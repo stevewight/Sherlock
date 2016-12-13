@@ -11,13 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    var framerIndex = 0
+    var color = UIColor.white
+    var width = 1.5
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let baseImage = UIImage(named:"image_3.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        frameFaces(index:0)
+        frameFaces()
         //pixellateText()
         //frameText()
     }
@@ -26,7 +30,14 @@ class ViewController: UIViewController {
     
     @IBAction func framerSegmentChanged(_ sender: UISegmentedControl) {
         imageView.subviews.forEach({ $0.removeFromSuperview() })
-        frameFaces(index: sender.selectedSegmentIndex)
+        framerIndex = sender.selectedSegmentIndex
+        frameFaces()
+    }
+    
+    @IBAction func colorSegmentChanged(_ sender: UISegmentedControl) {
+        imageView.subviews.forEach({ $0.removeFromSuperview() })
+        color = colorWith(index: sender.selectedSegmentIndex)
+        frameFaces()
     }
     
     // (self) Methods
@@ -43,11 +54,11 @@ class ViewController: UIViewController {
         imageView.image = textObscure.pixelate()
     }
     
-    private func frameFaces(index:Int) {
+    private func frameFaces() {
         let faceFramer = FaceFramer(imageView)
-        faceFramer.shapeColor = UIColor.white
-        faceFramer.borderWidth = 1.5
-        if index == 0 {
+        faceFramer.shapeColor = color
+        faceFramer.borderWidth = width
+        if framerIndex == 0 {
             faceFramer.radial()
         } else {
             faceFramer.box()
@@ -57,6 +68,19 @@ class ViewController: UIViewController {
     private func frameText() {
         let textFramer = TextFramer(imageView)
         textFramer.box()
+    }
+    
+    private func colorWith(index:Int)->UIColor {
+        switch index {
+        case 0:
+            return UIColor.white
+        case 1:
+            return UIColor.blue
+        case 2:
+            return UIColor.red
+        default:
+            return UIColor.white
+        }
     }
 
 }
