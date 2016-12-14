@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,13 +23,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="itF-wf-NHt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="itF-wf-NHt">
                                 <rect key="frame" x="0.0" y="28" width="375" height="440"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="itF-wf-NHt" secondAttribute="height" multiplier="75:88" id="zff-7v-ZTp"/>
+                                </constraints>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gyT-q9-W6m">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gyT-q9-W6m">
                                 <rect key="frame" x="16" y="476" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Radial"/>
                                     <segment title="Box"/>
@@ -36,21 +39,8 @@
                                     <action selector="framerSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pnt-7d-TaF"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3l2-hf-ZaW">
-                                <rect key="frame" x="16" y="532" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Thin"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Thick"/>
-                                </segments>
-                                <connections>
-                                    <action selector="widthSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jw9-sQ-oYy"/>
-                                </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gU0-Q7-NPT">
-                                <rect key="frame" x="16" y="590" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gU0-Q7-NPT">
+                                <rect key="frame" x="16" y="546" width="343" height="29"/>
                                 <segments>
                                     <segment title="White"/>
                                     <segment title="Blue"/>
@@ -61,8 +51,33 @@
                                     <action selector="colorSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e6u-oU-AAp"/>
                                 </connections>
                             </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3l2-hf-ZaW">
+                                <rect key="frame" x="16" y="511" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Thin"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Thick"/>
+                                </segments>
+                                <connections>
+                                    <action selector="widthSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jw9-sQ-oYy"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gU0-Q7-NPT" secondAttribute="trailing" id="4Rv-du-j1e"/>
+                            <constraint firstItem="3l2-hf-ZaW" firstAttribute="top" secondItem="itF-wf-NHt" secondAttribute="bottom" constant="43" id="ACr-QR-tqu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3l2-hf-ZaW" secondAttribute="leading" id="DSY-C8-BNB"/>
+                            <constraint firstItem="gU0-Q7-NPT" firstAttribute="top" secondItem="itF-wf-NHt" secondAttribute="bottom" constant="78" id="EUP-kf-0lW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3l2-hf-ZaW" secondAttribute="trailing" id="JUa-Kn-8cb"/>
+                            <constraint firstItem="itF-wf-NHt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jpg-ra-HUB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gyT-q9-W6m" secondAttribute="leading" id="nDW-w3-fOV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gU0-Q7-NPT" secondAttribute="leading" id="pI8-aJ-0Gc"/>
+                            <constraint firstItem="itF-wf-NHt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="qiQ-yP-GXu"/>
+                            <constraint firstItem="gyT-q9-W6m" firstAttribute="top" secondItem="itF-wf-NHt" secondAttribute="bottom" constant="8" id="stT-9a-h5t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="itF-wf-NHt" secondAttribute="trailing" constant="-16" id="vOU-cT-ukm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gyT-q9-W6m" secondAttribute="trailing" id="z13-p5-JQL"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="itF-wf-NHt" id="sgX-QJ-ptP"/>
@@ -71,6 +86,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="112.89355322338831"/>
+        </scene>
+        <!--ObscureVC-->
+        <scene sceneID="qak-sE-2EI">
+            <objects>
+                <viewController id="Er9-XU-1oW" customClass="ObscureVC" customModule="Sherlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y9J-V6-Fec"/>
+                        <viewControllerLayoutGuide type="bottom" id="who-AQ-Zlh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mjp-V0-l52">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-AJ-DJI">
+                                <rect key="frame" x="0.0" y="28" width="375" height="440"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DjL-AJ-DJI" secondAttribute="height" multiplier="75:88" id="l6c-mA-Jsz"/>
+                                </constraints>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="79P-Yn-b4x">
+                                <rect key="frame" x="16" y="499" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Pixelate"/>
+                                    <segment title="Crystalize"/>
+                                </segments>
+                                <connections>
+                                    <action selector="obscureSegmentChanged:" destination="Er9-XU-1oW" eventType="valueChanged" id="v20-Wa-EFH"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="79P-Yn-b4x" secondAttribute="trailing" id="0NJ-Hr-WE2"/>
+                            <constraint firstItem="DjL-AJ-DJI" firstAttribute="leading" secondItem="mjp-V0-l52" secondAttribute="leadingMargin" constant="-16" id="E4f-tG-QqE"/>
+                            <constraint firstItem="DjL-AJ-DJI" firstAttribute="top" secondItem="y9J-V6-Fec" secondAttribute="bottom" constant="8" id="HNH-6H-Uaw"/>
+                            <constraint firstItem="79P-Yn-b4x" firstAttribute="top" secondItem="DjL-AJ-DJI" secondAttribute="bottom" constant="31" id="Xbh-pa-QUP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DjL-AJ-DJI" secondAttribute="trailing" constant="-16" id="rlU-oa-2Lb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="79P-Yn-b4x" secondAttribute="leading" id="vj6-dG-gZI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="DjL-AJ-DJI" id="zRj-cQ-fcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vo3-16-H20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="814.54272863568224"/>
         </scene>
     </scenes>
     <resources>

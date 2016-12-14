@@ -21,9 +21,13 @@ class ViewController: UIViewController {
         let baseImage = UIImage(named:"image_3.jpg")!
         imageView.image = baseImage
         //pixellateFaces()
-        frameFaces()
+        
         //pixellateText()
         //frameText()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        frameFaces()
     }
     
     // @IBAction Methods
@@ -47,18 +51,6 @@ class ViewController: UIViewController {
     }
     
     // (self) Methods
-    
-    private func pixellateFaces() {
-        let faceObscure = FaceObscure(imageView.image!)
-        //imageView.image = faceObscure.pixelate()
-        imageView.image = faceObscure.crystalize()
-    }
-    
-    private func pixellateText() {
-        let textObscure = TextObscure(imageView.image!)
-        //imageView.image = textObscure.crystalize()
-        imageView.image = textObscure.pixelate()
-    }
     
     private func frameFaces() {
         let faceFramer = FaceFramer(imageView)

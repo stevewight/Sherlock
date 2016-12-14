@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA20325A1E012A4100D29ECA /* ObscureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2032591E012A4100D29ECA /* ObscureVC.swift */; };
 		AA5D72761DFCA15400C31AE4 /* CoordConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72751DFCA15400C31AE4 /* CoordConverter.swift */; };
 		AA5D727B1DFD184800C31AE4 /* SpinAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727A1DFD184800C31AE4 /* SpinAnimate.swift */; };
 		AA5D727F1DFE083C00C31AE4 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D727C1DFE083C00C31AE4 /* BaseObscure.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA2032591E012A4100D29ECA /* ObscureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObscureVC.swift; path = Controllers/ObscureVC.swift; sourceTree = "<group>"; };
 		AA5D72751DFCA15400C31AE4 /* CoordConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoordConverter.swift; path = Models/Helpers/CoordConverter.swift; sourceTree = "<group>"; };
 		AA5D727A1DFD184800C31AE4 /* SpinAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpinAnimate.swift; path = Views/Animations/SpinAnimate.swift; sourceTree = "<group>"; };
 		AA5D727C1DFE083C00C31AE4 /* BaseObscure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = Models/Obfuscators/BaseObscure.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				AA5D72A41DFE0AF800C31AE4 /* ViewController.swift */,
+				AA2032591E012A4100D29ECA /* ObscureVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				AA5D729E1DFE0A5600C31AE4 /* BlendMask.swift in Sources */,
 				AA5D72851DFE088D00C31AE4 /* BaseDetector.swift in Sources */,
 				AA5D72811DFE083C00C31AE4 /* TextObscure.swift in Sources */,
+				AA20325A1E012A4100D29ECA /* ObscureVC.swift in Sources */,
 				AA5D72961DFE0A4100C31AE4 /* ObscureFilter.swift in Sources */,
 				AA5D727B1DFD184800C31AE4 /* SpinAnimate.swift in Sources */,
 				AAECCB6D1DF243AD004B7275 /* AppDelegate.swift in Sources */,
