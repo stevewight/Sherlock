@@ -12,40 +12,39 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    let baseImage = UIImage(named:"image_3.jpg")!
+    
     var framerIndex = 0
     var color = UIColor.white
     var width = 0.5
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let baseImage = UIImage(named:"image_3.jpg")!
         imageView.image = baseImage
-        //pixellateFaces()
-        
-        //pixellateText()
         //frameText()
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        removeFrames()
         frameFaces()
     }
     
     // @IBAction Methods
     
     @IBAction func framerSegmentChanged(_ sender: UISegmentedControl) {
-        imageView.subviews.forEach({ $0.removeFromSuperview() })
+        removeFrames()
         framerIndex = sender.selectedSegmentIndex
         frameFaces()
     }
     
     @IBAction func colorSegmentChanged(_ sender: UISegmentedControl) {
-        imageView.subviews.forEach({ $0.removeFromSuperview() })
+        removeFrames()
         color = colorWith(index: sender.selectedSegmentIndex)
         frameFaces()
     }
     
     @IBAction func widthSegmentChanged(_ sender: UISegmentedControl) {
-        imageView.subviews.forEach({ $0.removeFromSuperview() })
+        removeFrames()
         width = widthWith(index: sender.selectedSegmentIndex)
         frameFaces()
     }
@@ -66,6 +65,10 @@ class ViewController: UIViewController {
     private func frameText() {
         let textFramer = TextFramer(imageView)
         textFramer.box()
+    }
+    
+    private func removeFrames() {
+        imageView.subviews.forEach({ $0.removeFromSuperview() })
     }
     
     private func widthWith(index:Int)->Double {
