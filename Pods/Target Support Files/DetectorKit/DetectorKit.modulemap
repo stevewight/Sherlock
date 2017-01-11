@@ -1,0 +1,6 @@
+framework module DetectorKit {
+  umbrella header "DetectorKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

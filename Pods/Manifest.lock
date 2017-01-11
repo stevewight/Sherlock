@@ -1,0 +1,16 @@
+PODS:
+  - DetectorKit (0.0.1)
+
+DEPENDENCIES:
+  - DetectorKit (from `../FRAMEWORKS/DetectorKit`)
+
+EXTERNAL SOURCES:
+  DetectorKit:
+    :path: "../FRAMEWORKS/DetectorKit"
+
+SPEC CHECKSUMS:
+  DetectorKit: 1396c49d5abc35e47d885bed938f660384bfb922
+
+PODFILE CHECKSUM: 80bca96899b33023a2ebdd59d8d33686c7c7bdf8
+
+COCOAPODS: 1.1.1

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DetectorKit
 
 class ViewController: UIViewController {
     

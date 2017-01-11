@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177196960FCD8E07F7C20D97 /* Pods_Sherlock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7932A7EADD159229F035CF5C /* Pods_Sherlock.framework */; };
 		AA20325A1E012A4100D29ECA /* ObscureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2032591E012A4100D29ECA /* ObscureVC.swift */; };
 		AA5D72A51DFE0AF800C31AE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72A41DFE0AF800C31AE4 /* ViewController.swift */; };
 		AA5D72AF1DFE0B0E00C31AE4 /* group_stock_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72A61DFE0B0E00C31AE4 /* group_stock_2.jpg */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7932A7EADD159229F035CF5C /* Pods_Sherlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sherlock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A41D920B0B93460C829162B /* Pods-Sherlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherlock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sherlock/Pods-Sherlock.debug.xcconfig"; sourceTree = "<group>"; };
 		AA2032591E012A4100D29ECA /* ObscureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObscureVC.swift; path = Controllers/ObscureVC.swift; sourceTree = "<group>"; };
 		AA5D72A41DFE0AF800C31AE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		AA5D72A61DFE0B0E00C31AE4 /* group_stock_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = group_stock_2.jpg; path = images/group_stock_2.jpg; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		AAECCB731DF243AD004B7275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAECCB761DF243AD004B7275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAECCB781DF243AD004B7275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9ED057E584055C3C9AFE350 /* Pods-Sherlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherlock.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sherlock/Pods-Sherlock.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177196960FCD8E07F7C20D97 /* Pods_Sherlock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96C5AA2DC6B26CAAEC12A25E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D920B0B93460C829162B /* Pods-Sherlock.debug.xcconfig */,
+				C9ED057E584055C3C9AFE350 /* Pods-Sherlock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AAECCB601DF243AD004B7275 = {
 			isa = PBXGroup;
 			children = (
 				AAECCB6B1DF243AD004B7275 /* Sherlock */,
 				AAECCB6A1DF243AD004B7275 /* Products */,
+				96C5AA2DC6B26CAAEC12A25E /* Pods */,
+				F2CD4B707B24DFFE0D3F940C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +126,14 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		F2CD4B707B24DFFE0D3F940C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7932A7EADD159229F035CF5C /* Pods_Sherlock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAECCB7B1DF243AD004B7275 /* Build configuration list for PBXNativeTarget "Sherlock" */;
 			buildPhases = (
+				CAE116EC9BCD9BBBA62EC34A /* [CP] Check Pods Manifest.lock */,
 				AAECCB651DF243AD004B7275 /* Sources */,
 				AAECCB661DF243AD004B7275 /* Frameworks */,
 				AAECCB671DF243AD004B7275 /* Resources */,
+				12DEF11AD87A96B30C7A03E7 /* [CP] Embed Pods Frameworks */,
+				6A849269F598F65481465228 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +213,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12DEF11AD87A96B30C7A03E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sherlock/Pods-Sherlock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A849269F598F65481465228 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sherlock/Pods-Sherlock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAE116EC9BCD9BBBA62EC34A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAECCB651DF243AD004B7275 /* Sources */ = {
@@ -313,6 +388,7 @@
 		};
 		AAECCB7C1DF243AD004B7275 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A41D920B0B93460C829162B /* Pods-Sherlock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47V5P5JJNR;
@@ -326,6 +402,7 @@
 		};
 		AAECCB7D1DF243AD004B7275 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9ED057E584055C3C9AFE350 /* Pods-Sherlock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 47V5P5JJNR;
