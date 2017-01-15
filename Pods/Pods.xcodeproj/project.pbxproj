@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040E78B1FBADF7A6957D85AC196D305D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		08CA3D06D2DF6B9599D08E4BA2891202 /* DetectorKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 739C3FC7C3AE564C41DDD47B66574726 /* DetectorKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1386A522733EE8BE9606FE3F3081C30D /* BaseFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538132723D8FC78E70B4DE23454C6F62 /* BaseFrameView.swift */; };
+		21D4A947FC993E771FB9B42A9A0C8D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2906EE558B1077E28FA118C4B7143480 /* CoordConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A613E113511C4D207908D87F605837F /* CoordConverter.swift */; };
+		351BBACB1C3D9707138D381E766C124F /* RectGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D849726D35B6CD9369D1D637D43197 /* RectGradient.swift */; };
+		35C1F910CB859592D7498967FA868909 /* MaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53961EB18809152439EC80ADDC942896 /* MaskFilter.swift */; };
+		42F7F1C0853C35F208DD398653D203D4 /* FaceFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32CEF3350406CA7E0868F4C4D2EE97 /* FaceFramer.swift */; };
+		48B87E5AAB760D7F92E5A37B36B6EA7A /* GradientMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F10CABC8F9F9BA3C3AF43278381BD2 /* GradientMask.swift */; };
+		58221276547D4FA1C26CADDE9BBDD9B5 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE26B1F285EEB760047CB20B0ABDB66 /* RadialGradient.swift */; };
+		5870BA5A5D4260A16FFD055676762264 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480435188BF03570F2092ED7E0E6849 /* FaceDetector.swift */; };
+		59B855C1CC18ACE9B3915ABD4F8C8B7D /* BlendMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B5A852449B437C145F442D269CE4B9 /* BlendMask.swift */; };
+		5CF017C4D1BDC50D1672B089A0CB2677 /* Pods-Sherlock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A7AD9E62844EB61079CEB522FC77FE /* Pods-Sherlock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		613B815DE015E72D136B76883AB538C2 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B95C19119B13DAE0CD19C9A568C426 /* BoxView.swift */; };
+		758F187BA58FED2D40A0039C1CA69EC0 /* TextFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AC6A3E15BA05D2495160D5B1E8717 /* TextFramer.swift */; };
+		77614B5DC06E14B84B22E9F2DAEAE91D /* ObscureFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86A3766610E96D1C921AC21E0F4759 /* ObscureFilter.swift */; };
+		7A5E1849F112EF251C6129315C218600 /* BaseObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10AC3D399ED6B1735D905D1AB65747 /* BaseObscure.swift */; };
+		8B2A271EAF8B0F94056604CED7EBCF26 /* TextDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E20F8F214DE7D7B6B3ABFA3893640A /* TextDetector.swift */; };
+		8DADF2011C47D81E45DFCD7F65C60587 /* Crystalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11005897630F0E779A7BB0ED4B0EA3B /* Crystalizer.swift */; };
+		944CB82D4CD6C2E093600EB97959F0F1 /* BaseFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173AE9D6AFA8BA1C81364E9851ED583 /* BaseFramer.swift */; };
+		956E0E40EE5D3DB0FB37C64E497CD02F /* OverComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4169C57435EBAE4E7B77B0FADBDA6693 /* OverComp.swift */; };
+		9F6A4FFCB22E0B3A81A76452CBE28647 /* FaceObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC5F6CDF56BC1E831354D753D8A83EF /* FaceObscure.swift */; };
+		AF052EBD442DEAF9319052C7C640ABA4 /* Masker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BBA33911781EE02F004B99514AA01 /* Masker.swift */; };
+		B0A59E5E57D01DE53E95CAAC7C81B6D0 /* MaskFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE3945E2C279BA16B2F0A4AB3B2715 /* MaskFeature.swift */; };
+		C3BD9F7B3321E0C35A3A97503477CE57 /* Pods-Sherlock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335EF6FB7D651577C658046AB884B58 /* Pods-Sherlock-dummy.m */; };
+		D44697C3EEA9CB38C0480208FA389483 /* DetectorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E78794626B5CF2C45B9230AB9FF1F879 /* DetectorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4F3F211A2F8DDEB37BF9B43059FE21A /* RadialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A446ECFA5619C4A7B002AEDF2465C02 /* RadialView.swift */; };
+		D5BE2F1230287DC0C21780C3189F4507 /* BaseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA31655C1C4BBF95FB1E0D781CAF5D /* BaseDetector.swift */; };
+		D7C742E39390B5E79690975E896B0314 /* Pixelator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617FF2023714141154448E507DC0379 /* Pixelator.swift */; };
+		E00019AC8F1BD132B98F8D5B7C88E43F /* TextObscure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FAE04900A7F5D3456E1812CCE7F3E /* TextObscure.swift */; };
+		E589035FEC6EEC9E7CD7C8AF7D7D3D85 /* SpinAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DAE1BF380BF5DD8CE573B5BCFDB13F /* SpinAnimate.swift */; };
+		F5D5A758A37D0E3466660A94A30B6332 /* DetectorKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B8D4EECBF655A957EC818BCFCFD986 /* DetectorKit-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD7696E34433F621D2E98832BE0DBB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32EE9CE0F84358C84E24ABC974FBE7E0;
+			remoteInfo = DetectorKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10B95C19119B13DAE0CD19C9A568C426 /* BoxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoxView.swift; path = DetectorKit/Views/BoxView.swift; sourceTree = "<group>"; };
+		1173AE9D6AFA8BA1C81364E9851ED583 /* BaseFramer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseFramer.swift; path = DetectorKit/Models/Framers/BaseFramer.swift; sourceTree = "<group>"; };
+		143A00BA4CD36A053B8D713F95AB89B2 /* Pods-Sherlock-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sherlock-resources.sh"; sourceTree = "<group>"; };
+		19096089E78F2655B50051F2724B699E /* Pods_Sherlock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sherlock.framework; path = "Pods-Sherlock.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F32CEF3350406CA7E0868F4C4D2EE97 /* FaceFramer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceFramer.swift; path = DetectorKit/Models/Framers/FaceFramer.swift; sourceTree = "<group>"; };
+		1FE27A6B7F90920CA34A37F68687E5BA /* Pods-Sherlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sherlock.release.xcconfig"; sourceTree = "<group>"; };
+		21E20F8F214DE7D7B6B3ABFA3893640A /* TextDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextDetector.swift; path = DetectorKit/Models/Detectors/TextDetector.swift; sourceTree = "<group>"; };
+		229849CCF10433EF4E7DD1696ABC8938 /* DetectorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DetectorKit.framework; path = DetectorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BA31655C1C4BBF95FB1E0D781CAF5D /* BaseDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDetector.swift; path = DetectorKit/Models/Detectors/BaseDetector.swift; sourceTree = "<group>"; };
+		2A10AC3D399ED6B1735D905D1AB65747 /* BaseObscure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseObscure.swift; path = DetectorKit/Models/Obfuscators/BaseObscure.swift; sourceTree = "<group>"; };
+		2CE870188F2ADD4B36C9CBF0EBFDDBE3 /* DetectorKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DetectorKit.modulemap; sourceTree = "<group>"; };
+		3A292C1FF85B7E27961EDA45D0656C0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF66E8535B88F94888AB8737F3AE476 /* Pods-Sherlock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Sherlock.modulemap"; sourceTree = "<group>"; };
+		4169C57435EBAE4E7B77B0FADBDA6693 /* OverComp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OverComp.swift; path = DetectorKit/Models/Filters/MaskFilters/OverComp.swift; sourceTree = "<group>"; };
+		4335EF6FB7D651577C658046AB884B58 /* Pods-Sherlock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sherlock-dummy.m"; sourceTree = "<group>"; };
+		51F10CABC8F9F9BA3C3AF43278381BD2 /* GradientMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientMask.swift; path = DetectorKit/Models/Filters/MaskFilters/GradientMask.swift; sourceTree = "<group>"; };
+		538132723D8FC78E70B4DE23454C6F62 /* BaseFrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseFrameView.swift; path = DetectorKit/Views/BaseFrameView.swift; sourceTree = "<group>"; };
+		53961EB18809152439EC80ADDC942896 /* MaskFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskFilter.swift; path = DetectorKit/Models/Filters/MaskFilters/MaskFilter.swift; sourceTree = "<group>"; };
+		55B8D4EECBF655A957EC818BCFCFD986 /* DetectorKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DetectorKit-dummy.m"; sourceTree = "<group>"; };
+		56B5A852449B437C145F442D269CE4B9 /* BlendMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlendMask.swift; path = DetectorKit/Models/Filters/MaskFilters/BlendMask.swift; sourceTree = "<group>"; };
+		594BBA33911781EE02F004B99514AA01 /* Masker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Masker.swift; path = DetectorKit/Models/Filters/Masker.swift; sourceTree = "<group>"; };
+		5A613E113511C4D207908D87F605837F /* CoordConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordConverter.swift; path = DetectorKit/Models/Helpers/CoordConverter.swift; sourceTree = "<group>"; };
+		5A86A3766610E96D1C921AC21E0F4759 /* ObscureFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObscureFilter.swift; path = DetectorKit/Models/Filters/ObscureFilters/ObscureFilter.swift; sourceTree = "<group>"; };
+		5EC5F6CDF56BC1E831354D753D8A83EF /* FaceObscure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceObscure.swift; path = DetectorKit/Models/Obfuscators/FaceObscure.swift; sourceTree = "<group>"; };
+		5EE9BD74B07F8A642DB713F1E802E64D /* Pods-Sherlock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sherlock-acknowledgements.plist"; sourceTree = "<group>"; };
+		5FE26B1F285EEB760047CB20B0ABDB66 /* RadialGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = DetectorKit/Models/Filters/MaskFilters/RadialGradient.swift; sourceTree = "<group>"; };
+		69AE3945E2C279BA16B2F0A4AB3B2715 /* MaskFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskFeature.swift; path = DetectorKit/Models/Filters/MaskFeature.swift; sourceTree = "<group>"; };
+		739C3FC7C3AE564C41DDD47B66574726 /* DetectorKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DetectorKit-umbrella.h"; sourceTree = "<group>"; };
+		79A7AD9E62844EB61079CEB522FC77FE /* Pods-Sherlock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sherlock-umbrella.h"; sourceTree = "<group>"; };
+		7A446ECFA5619C4A7B002AEDF2465C02 /* RadialView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadialView.swift; path = DetectorKit/Views/RadialView.swift; sourceTree = "<group>"; };
+		931AC6A3E15BA05D2495160D5B1E8717 /* TextFramer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFramer.swift; path = DetectorKit/Models/Framers/TextFramer.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9480435188BF03570F2092ED7E0E6849 /* FaceDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FaceDetector.swift; path = DetectorKit/Models/Detectors/FaceDetector.swift; sourceTree = "<group>"; };
+		A5486797519898FE0A84CB8BB9693003 /* DetectorKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DetectorKit-prefix.pch"; sourceTree = "<group>"; };
+		C48FAE04900A7F5D3456E1812CCE7F3E /* TextObscure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextObscure.swift; path = DetectorKit/Models/Obfuscators/TextObscure.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF8681C065772148EF0AF22753F36B37 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DAE1BF380BF5DD8CE573B5BCFDB13F /* SpinAnimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinAnimate.swift; path = DetectorKit/Views/Animations/SpinAnimate.swift; sourceTree = "<group>"; };
+		DA072DBDBDD02AD8446E9EEA46D54618 /* Pods-Sherlock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sherlock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E11005897630F0E779A7BB0ED4B0EA3B /* Crystalizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Crystalizer.swift; path = DetectorKit/Models/Filters/ObscureFilters/Crystalizer.swift; sourceTree = "<group>"; };
+		E78794626B5CF2C45B9230AB9FF1F879 /* DetectorKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DetectorKit.h; path = DetectorKit/DetectorKit.h; sourceTree = "<group>"; };
+		E8DD788E0D7E59B7E2A936DD5279BF47 /* Pods-Sherlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sherlock.debug.xcconfig"; sourceTree = "<group>"; };
+		ED75158F8FDC2ED2F8D470A3D5341FE0 /* DetectorKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DetectorKit.xcconfig; sourceTree = "<group>"; };
+		F2D849726D35B6CD9369D1D637D43197 /* RectGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectGradient.swift; path = DetectorKit/Models/Filters/MaskFilters/RectGradient.swift; sourceTree = "<group>"; };
+		F617FF2023714141154448E507DC0379 /* Pixelator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pixelator.swift; path = DetectorKit/Models/Filters/ObscureFilters/Pixelator.swift; sourceTree = "<group>"; };
+		FB173669C5B60B3D99CF77BCB9E97421 /* Pods-Sherlock-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sherlock-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37BAA09158E3FD178403158E381877DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D4A947FC993E771FB9B42A9A0C8D13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		401763A4748D4EE66C4E7BE3E944AEAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040E78B1FBADF7A6957D85AC196D305D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		399DEF29268536D66EF49E6DF4FD909B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				963E5B17D52124CECC7CC431E7A84688 /* DetectorKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67AFFB7295CB7C5685215DAFDF3BEC1A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CE870188F2ADD4B36C9CBF0EBFDDBE3 /* DetectorKit.modulemap */,
+				ED75158F8FDC2ED2F8D470A3D5341FE0 /* DetectorKit.xcconfig */,
+				55B8D4EECBF655A957EC818BCFCFD986 /* DetectorKit-dummy.m */,
+				A5486797519898FE0A84CB8BB9693003 /* DetectorKit-prefix.pch */,
+				739C3FC7C3AE564C41DDD47B66574726 /* DetectorKit-umbrella.h */,
+				CF8681C065772148EF0AF22753F36B37 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DetectorKit";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				399DEF29268536D66EF49E6DF4FD909B /* Pods */,
+				9A21B3984B1D8BCEA5609D3B373A44B5 /* Products */,
+				AF0C03B1DF4D6EA9BABF84D3121E028C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		963E5B17D52124CECC7CC431E7A84688 /* DetectorKit */ = {
+			isa = PBXGroup;
+			children = (
+				29BA31655C1C4BBF95FB1E0D781CAF5D /* BaseDetector.swift */,
+				1173AE9D6AFA8BA1C81364E9851ED583 /* BaseFramer.swift */,
+				538132723D8FC78E70B4DE23454C6F62 /* BaseFrameView.swift */,
+				2A10AC3D399ED6B1735D905D1AB65747 /* BaseObscure.swift */,
+				56B5A852449B437C145F442D269CE4B9 /* BlendMask.swift */,
+				10B95C19119B13DAE0CD19C9A568C426 /* BoxView.swift */,
+				5A613E113511C4D207908D87F605837F /* CoordConverter.swift */,
+				E11005897630F0E779A7BB0ED4B0EA3B /* Crystalizer.swift */,
+				E78794626B5CF2C45B9230AB9FF1F879 /* DetectorKit.h */,
+				9480435188BF03570F2092ED7E0E6849 /* FaceDetector.swift */,
+				1F32CEF3350406CA7E0868F4C4D2EE97 /* FaceFramer.swift */,
+				5EC5F6CDF56BC1E831354D753D8A83EF /* FaceObscure.swift */,
+				51F10CABC8F9F9BA3C3AF43278381BD2 /* GradientMask.swift */,
+				594BBA33911781EE02F004B99514AA01 /* Masker.swift */,
+				69AE3945E2C279BA16B2F0A4AB3B2715 /* MaskFeature.swift */,
+				53961EB18809152439EC80ADDC942896 /* MaskFilter.swift */,
+				5A86A3766610E96D1C921AC21E0F4759 /* ObscureFilter.swift */,
+				4169C57435EBAE4E7B77B0FADBDA6693 /* OverComp.swift */,
+				F617FF2023714141154448E507DC0379 /* Pixelator.swift */,
+				5FE26B1F285EEB760047CB20B0ABDB66 /* RadialGradient.swift */,
+				7A446ECFA5619C4A7B002AEDF2465C02 /* RadialView.swift */,
+				F2D849726D35B6CD9369D1D637D43197 /* RectGradient.swift */,
+				D4DAE1BF380BF5DD8CE573B5BCFDB13F /* SpinAnimate.swift */,
+				21E20F8F214DE7D7B6B3ABFA3893640A /* TextDetector.swift */,
+				931AC6A3E15BA05D2495160D5B1E8717 /* TextFramer.swift */,
+				C48FAE04900A7F5D3456E1812CCE7F3E /* TextObscure.swift */,
+				67AFFB7295CB7C5685215DAFDF3BEC1A /* Support Files */,
+			);
+			name = DetectorKit;
+			path = DetectorKit;
+			sourceTree = "<group>";
+		};
+		9A21B3984B1D8BCEA5609D3B373A44B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				229849CCF10433EF4E7DD1696ABC8938 /* DetectorKit.framework */,
+				19096089E78F2655B50051F2724B699E /* Pods_Sherlock.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF0C03B1DF4D6EA9BABF84D3121E028C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCDABE0D8618E30B32E7BD7B8F89333C /* Pods-Sherlock */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCDABE0D8618E30B32E7BD7B8F89333C /* Pods-Sherlock */ = {
+			isa = PBXGroup;
+			children = (
+				3A292C1FF85B7E27961EDA45D0656C0E /* Info.plist */,
+				3CF66E8535B88F94888AB8737F3AE476 /* Pods-Sherlock.modulemap */,
+				DA072DBDBDD02AD8446E9EEA46D54618 /* Pods-Sherlock-acknowledgements.markdown */,
+				5EE9BD74B07F8A642DB713F1E802E64D /* Pods-Sherlock-acknowledgements.plist */,
+				4335EF6FB7D651577C658046AB884B58 /* Pods-Sherlock-dummy.m */,
+				FB173669C5B60B3D99CF77BCB9E97421 /* Pods-Sherlock-frameworks.sh */,
+				143A00BA4CD36A053B8D713F95AB89B2 /* Pods-Sherlock-resources.sh */,
+				79A7AD9E62844EB61079CEB522FC77FE /* Pods-Sherlock-umbrella.h */,
+				E8DD788E0D7E59B7E2A936DD5279BF47 /* Pods-Sherlock.debug.xcconfig */,
+				1FE27A6B7F90920CA34A37F68687E5BA /* Pods-Sherlock.release.xcconfig */,
+			);
+			name = "Pods-Sherlock";
+			path = "Target Support Files/Pods-Sherlock";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		480821CA4DD58FDD527206F4E53AB0C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF017C4D1BDC50D1672B089A0CB2677 /* Pods-Sherlock-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9963D9E56D3825089A3EF4EC4766CA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CA3D06D2DF6B9599D08E4BA2891202 /* DetectorKit-umbrella.h in Headers */,
+				D44697C3EEA9CB38C0480208FA389483 /* DetectorKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32EE9CE0F84358C84E24ABC974FBE7E0 /* DetectorKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F02748AE9DA190B0CBDDF6083855FC1 /* Build configuration list for PBXNativeTarget "DetectorKit" */;
+			buildPhases = (
+				82826D01C54EF00DA8B8E246B1741B2D /* Sources */,
+				401763A4748D4EE66C4E7BE3E944AEAA /* Frameworks */,
+				F9963D9E56D3825089A3EF4EC4766CA7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DetectorKit;
+			productName = DetectorKit;
+			productReference = 229849CCF10433EF4E7DD1696ABC8938 /* DetectorKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7BB90894678075E353BB06575F787C3E /* Pods-Sherlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49466F65BD1356FA9D5BD80F4344DD5D /* Build configuration list for PBXNativeTarget "Pods-Sherlock" */;
+			buildPhases = (
+				48F75D4FF316AB3626B3E94AFEB4487C /* Sources */,
+				37BAA09158E3FD178403158E381877DA /* Frameworks */,
+				480821CA4DD58FDD527206F4E53AB0C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7C7C2856A2B2D8AE70C70B46137906F /* PBXTargetDependency */,
+			);
+			name = "Pods-Sherlock";
+			productName = "Pods-Sherlock";
+			productReference = 19096089E78F2655B50051F2724B699E /* Pods_Sherlock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9A21B3984B1D8BCEA5609D3B373A44B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32EE9CE0F84358C84E24ABC974FBE7E0 /* DetectorKit */,
+				7BB90894678075E353BB06575F787C3E /* Pods-Sherlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48F75D4FF316AB3626B3E94AFEB4487C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BD9F7B3321E0C35A3A97503477CE57 /* Pods-Sherlock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82826D01C54EF00DA8B8E246B1741B2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE2F1230287DC0C21780C3189F4507 /* BaseDetector.swift in Sources */,
+				944CB82D4CD6C2E093600EB97959F0F1 /* BaseFramer.swift in Sources */,
+				1386A522733EE8BE9606FE3F3081C30D /* BaseFrameView.swift in Sources */,
+				7A5E1849F112EF251C6129315C218600 /* BaseObscure.swift in Sources */,
+				59B855C1CC18ACE9B3915ABD4F8C8B7D /* BlendMask.swift in Sources */,
+				613B815DE015E72D136B76883AB538C2 /* BoxView.swift in Sources */,
+				2906EE558B1077E28FA118C4B7143480 /* CoordConverter.swift in Sources */,
+				8DADF2011C47D81E45DFCD7F65C60587 /* Crystalizer.swift in Sources */,
+				F5D5A758A37D0E3466660A94A30B6332 /* DetectorKit-dummy.m in Sources */,
+				5870BA5A5D4260A16FFD055676762264 /* FaceDetector.swift in Sources */,
+				42F7F1C0853C35F208DD398653D203D4 /* FaceFramer.swift in Sources */,
+				9F6A4FFCB22E0B3A81A76452CBE28647 /* FaceObscure.swift in Sources */,
+				48B87E5AAB760D7F92E5A37B36B6EA7A /* GradientMask.swift in Sources */,
+				AF052EBD442DEAF9319052C7C640ABA4 /* Masker.swift in Sources */,
+				B0A59E5E57D01DE53E95CAAC7C81B6D0 /* MaskFeature.swift in Sources */,
+				35C1F910CB859592D7498967FA868909 /* MaskFilter.swift in Sources */,
+				77614B5DC06E14B84B22E9F2DAEAE91D /* ObscureFilter.swift in Sources */,
+				956E0E40EE5D3DB0FB37C64E497CD02F /* OverComp.swift in Sources */,
+				D7C742E39390B5E79690975E896B0314 /* Pixelator.swift in Sources */,
+				58221276547D4FA1C26CADDE9BBDD9B5 /* RadialGradient.swift in Sources */,
+				D4F3F211A2F8DDEB37BF9B43059FE21A /* RadialView.swift in Sources */,
+				351BBACB1C3D9707138D381E766C124F /* RectGradient.swift in Sources */,
+				E589035FEC6EEC9E7CD7C8AF7D7D3D85 /* SpinAnimate.swift in Sources */,
+				8B2A271EAF8B0F94056604CED7EBCF26 /* TextDetector.swift in Sources */,
+				758F187BA58FED2D40A0039C1CA69EC0 /* TextFramer.swift in Sources */,
+				E00019AC8F1BD132B98F8D5B7C88E43F /* TextObscure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7C7C2856A2B2D8AE70C70B46137906F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DetectorKit;
+			target = 32EE9CE0F84358C84E24ABC974FBE7E0 /* DetectorKit */;
+			targetProxy = AD7696E34433F621D2E98832BE0DBB2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		15526998FCBC23F299F661E201BD0879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED75158F8FDC2ED2F8D470A3D5341FE0 /* DetectorKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DetectorKit/DetectorKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DetectorKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DetectorKit/DetectorKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DetectorKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B0A2DFB784DF22423CDF4FCB0341867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE27A6B7F90920CA34A37F68687E5BA /* Pods-Sherlock.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sherlock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sherlock/Pods-Sherlock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Sherlock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED90FD76B2325049BEC253062B1D496F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED75158F8FDC2ED2F8D470A3D5341FE0 /* DetectorKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DetectorKit/DetectorKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DetectorKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DetectorKit/DetectorKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DetectorKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD1D068EE0B77F6A1078D6B13DE36B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8DD788E0D7E59B7E2A936DD5279BF47 /* Pods-Sherlock.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sherlock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sherlock/Pods-Sherlock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Sherlock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F02748AE9DA190B0CBDDF6083855FC1 /* Build configuration list for PBXNativeTarget "DetectorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED90FD76B2325049BEC253062B1D496F /* Debug */,
+				15526998FCBC23F299F661E201BD0879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49466F65BD1356FA9D5BD80F4344DD5D /* Build configuration list for PBXNativeTarget "Pods-Sherlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1D068EE0B77F6A1078D6B13DE36B32 /* Debug */,
+				9B0A2DFB784DF22423CDF4FCB0341867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

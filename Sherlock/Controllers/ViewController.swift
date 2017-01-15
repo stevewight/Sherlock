@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import DetectorKit
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    let baseImage = UIImage(named:"image_3.jpg")!
+    let baseImage = UIImage(named:"image_4.jpg")!
     
     var framerIndex = 0
     var color = UIColor.white

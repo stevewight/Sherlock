@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import DetectorKit
 
 class ObscureVC: UIViewController {
 
-    let baseImage = UIImage(named:"image_3.jpg")!
+    let baseImage = UIImage(named:"image_4.jpg")!
     
     @IBOutlet weak var imageView: UIImageView!
     
