@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="itF-wf-NHt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="itF-wf-NHt">
                                 <rect key="frame" x="0.0" y="28" width="375" height="440"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="itF-wf-NHt" secondAttribute="height" multiplier="75:88" id="zff-7v-ZTp"/>
@@ -118,7 +118,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-AJ-DJI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DjL-AJ-DJI">
                                 <rect key="frame" x="0.0" y="28" width="375" height="440"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DjL-AJ-DJI" secondAttribute="height" multiplier="75:88" id="l6c-mA-Jsz"/>
@@ -156,6 +156,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image_1.jpg" width="1944" height="2592"/>
+        <image name="image_3.jpg" width="1940" height="2596"/>
     </resources>
 </document>

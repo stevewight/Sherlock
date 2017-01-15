@@ -12,8 +12,6 @@
 		AA5D72A51DFE0AF800C31AE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D72A41DFE0AF800C31AE4 /* ViewController.swift */; };
 		AA5D72AF1DFE0B0E00C31AE4 /* group_stock_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72A61DFE0B0E00C31AE4 /* group_stock_2.jpg */; };
 		AA5D72B01DFE0B0E00C31AE4 /* group_stock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72A71DFE0B0E00C31AE4 /* group_stock.jpg */; };
-		AA5D72B11DFE0B0E00C31AE4 /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72A81DFE0B0E00C31AE4 /* image_1.jpg */; };
-		AA5D72B21DFE0B0E00C31AE4 /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72A91DFE0B0E00C31AE4 /* image_2.jpg */; };
 		AA5D72B31DFE0B0E00C31AE4 /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72AA1DFE0B0E00C31AE4 /* image_3.jpg */; };
 		AA5D72B41DFE0B0E00C31AE4 /* image_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72AB1DFE0B0E00C31AE4 /* image_4.jpg */; };
 		AA5D72B51DFE0B0E00C31AE4 /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA5D72AC1DFE0B0E00C31AE4 /* image_6.jpg */; };
@@ -32,8 +30,6 @@
 		AA5D72A41DFE0AF800C31AE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		AA5D72A61DFE0B0E00C31AE4 /* group_stock_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = group_stock_2.jpg; path = images/group_stock_2.jpg; sourceTree = "<group>"; };
 		AA5D72A71DFE0B0E00C31AE4 /* group_stock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = group_stock.jpg; path = images/group_stock.jpg; sourceTree = "<group>"; };
-		AA5D72A81DFE0B0E00C31AE4 /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_1.jpg; path = images/image_1.jpg; sourceTree = "<group>"; };
-		AA5D72A91DFE0B0E00C31AE4 /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_2.jpg; path = images/image_2.jpg; sourceTree = "<group>"; };
 		AA5D72AA1DFE0B0E00C31AE4 /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_3.jpg; path = images/image_3.jpg; sourceTree = "<group>"; };
 		AA5D72AB1DFE0B0E00C31AE4 /* image_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_4.jpg; path = images/image_4.jpg; sourceTree = "<group>"; };
 		AA5D72AC1DFE0B0E00C31AE4 /* image_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_6.jpg; path = images/image_6.jpg; sourceTree = "<group>"; };
@@ -115,8 +111,6 @@
 			children = (
 				AA5D72A61DFE0B0E00C31AE4 /* group_stock_2.jpg */,
 				AA5D72A71DFE0B0E00C31AE4 /* group_stock.jpg */,
-				AA5D72A81DFE0B0E00C31AE4 /* image_1.jpg */,
-				AA5D72A91DFE0B0E00C31AE4 /* image_2.jpg */,
 				AA5D72AA1DFE0B0E00C31AE4 /* image_3.jpg */,
 				AA5D72AB1DFE0B0E00C31AE4 /* image_4.jpg */,
 				AA5D72AC1DFE0B0E00C31AE4 /* image_6.jpg */,
@@ -202,12 +196,10 @@
 				AA5D72AF1DFE0B0E00C31AE4 /* group_stock_2.jpg in Resources */,
 				AA5D72B61DFE0B0E00C31AE4 /* text_image_1.jpg in Resources */,
 				AA5D72B41DFE0B0E00C31AE4 /* image_4.jpg in Resources */,
-				AA5D72B21DFE0B0E00C31AE4 /* image_2.jpg in Resources */,
 				AAECCB741DF243AD004B7275 /* Assets.xcassets in Resources */,
 				AA5D72B71DFE0B0E00C31AE4 /* text_image_2.jpg in Resources */,
 				AA5D72B01DFE0B0E00C31AE4 /* group_stock.jpg in Resources */,
 				AAECCB721DF243AD004B7275 /* Main.storyboard in Resources */,
-				AA5D72B11DFE0B0E00C31AE4 /* image_1.jpg in Resources */,
 				AA5D72B31DFE0B0E00C31AE4 /* image_3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
