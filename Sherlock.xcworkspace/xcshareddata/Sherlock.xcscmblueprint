@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2899AD07BEECA3AA20E52A91E05AC76BD875C791",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2899AD07BEECA3AA20E52A91E05AC76BD875C791" : 9223372036854775807,
+    "B46A58DA8778B1141BAE6284818D8ABB60EB2FFB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4938EBE5-9078-4B90-A762-1D494615892F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2899AD07BEECA3AA20E52A91E05AC76BD875C791" : "Sherlock\/",
+    "B46A58DA8778B1141BAE6284818D8ABB60EB2FFB" : "FRAMEWORKS\/DetectorKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Sherlock",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sherlock.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:stevewight\/Sherlock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2899AD07BEECA3AA20E52A91E05AC76BD875C791"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stevewight\/DetectorKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B46A58DA8778B1141BAE6284818D8ABB60EB2FFB"
+    }
+  ]
+}
