@@ -2,15 +2,21 @@ PODS:
   - DetectorKit (0.0.1)
 
 DEPENDENCIES:
-  - DetectorKit (from `../FRAMEWORKS/DetectorKit`)
+  - DetectorKit (from `https://github.com/stevewight/DetectorKit.git`, tag `0.0.1`)
 
 EXTERNAL SOURCES:
   DetectorKit:
-    :path: "../FRAMEWORKS/DetectorKit"
+    :git: https://github.com/stevewight/DetectorKit.git
+    :tag: 0.0.1
+
+CHECKOUT OPTIONS:
+  DetectorKit:
+    :git: https://github.com/stevewight/DetectorKit.git
+    :tag: 0.0.1
 
 SPEC CHECKSUMS:
-  DetectorKit: 1396c49d5abc35e47d885bed938f660384bfb922
+  DetectorKit: bee842eddf3d245e4ca50e61a775e983f627bdd8
 
-PODFILE CHECKSUM: 80bca96899b33023a2ebdd59d8d33686c7c7bdf8
+PODFILE CHECKSUM: 5d764cd829d61090b912f0fd0a463e1af4b4e1d5
 
 COCOAPODS: 1.1.1

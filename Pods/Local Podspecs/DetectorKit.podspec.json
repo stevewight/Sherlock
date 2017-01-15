@@ -15,7 +15,8 @@
     "ios": "10.0"
   },
   "source": {
-    "path": ""
+    "git": "https://github.com/stevewight/DetectorKit",
+    "tag": "0.0.1"
   },
   "source_files": "DetectorKit/**/*.{h,m,swift}",
   "pod_target_xcconfig": {
