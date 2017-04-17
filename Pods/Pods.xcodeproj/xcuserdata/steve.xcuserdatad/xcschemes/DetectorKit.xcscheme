@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '32EE9CE0F84358C84E24ABC974FBE7E0'
+               BlueprintIdentifier = '9EC60E391F16396EDA4413F0677CA7BF'
                BlueprintName = 'DetectorKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'DetectorKit.framework'>

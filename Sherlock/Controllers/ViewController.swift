@@ -56,10 +56,18 @@ class ViewController: UIViewController {
         let faceFramer = FaceFramer(imageView)
         faceFramer.shapeColor = color
         faceFramer.borderWidth = width
-        if framerIndex == 0 {
+        
+        switch framerIndex {
+        case 0:
             faceFramer.radial()
-        } else {
+        case 1:
+            faceFramer.pulse()
+        case 2:
             faceFramer.box()
+        case 3:
+            faceFramer.boxRotate()
+        default:
+            break
         }
     }
     
