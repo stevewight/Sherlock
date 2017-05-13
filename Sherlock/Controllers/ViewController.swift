@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    let baseImage = UIImage(named:"image_4.jpg")!
+    let baseImage = UIImage(named:"image_profile.jpg")!
     
     var framerIndex = 0
     var color = UIColor.white
@@ -21,6 +21,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let colorAverage = ColorAverage(baseImage)
+        let backColor = colorAverage.output()
+        view.backgroundColor = backColor
+        
         imageView.image = baseImage
         //frameText()
     }
