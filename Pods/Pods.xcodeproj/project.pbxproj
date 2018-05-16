@@ -541,7 +541,7 @@
 			};
 			name = Debug;
 		};
-		2AD1A1BC6B6195495E499D195EF9A629 /* Debug */ = {
+		6CC26DE06BAC4F844A1153861C267462 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 779AD1DE5D1A903BA0B520779005D20E /* DetectorKit.xcconfig */;
 			buildSettings = {
@@ -567,7 +567,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -609,7 +609,7 @@
 			};
 			name = Release;
 		};
-		B9B74AC29BA0F9DB20BC44B04D9ECB4A /* Release */ = {
+		E10077F9C4FE3EA8B99B19C5160D7728 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 779AD1DE5D1A903BA0B520779005D20E /* DetectorKit.xcconfig */;
 			buildSettings = {
@@ -634,7 +634,7 @@
 				PRODUCT_NAME = DetectorKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -741,8 +741,8 @@
 		CE9268065B84F671A8EA5261D48E9F5F /* Build configuration list for PBXNativeTarget "DetectorKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AD1A1BC6B6195495E499D195EF9A629 /* Debug */,
-				B9B74AC29BA0F9DB20BC44B04D9ECB4A /* Release */,
+				6CC26DE06BAC4F844A1153861C267462 /* Debug */,
+				E10077F9C4FE3EA8B99B19C5160D7728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

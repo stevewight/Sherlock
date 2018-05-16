@@ -1,7 +1,7 @@
 {
   "name": "DetectorKit",
-  "version": "0.0.1",
-  "summary": "Simple object detection, framing and obfuscation",
+  "version": "0.0.2",
+  "summary": "Simple image object detection, framing and obfuscation",
   "description": "Easily add object detection framing the obfuscation to images",
   "homepage": "http://www.github.com/stevewight",
   "license": {
@@ -16,10 +16,10 @@
   },
   "source": {
     "git": "https://github.com/stevewight/DetectorKit.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": "DetectorKit/**/*.{h,m,swift}",
   "pod_target_xcconfig": {
-    "SWIFT_VERSION": "3"
+    "SWIFT_VERSION": "4"
   }
 }

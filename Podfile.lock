@@ -1,5 +1,5 @@
 PODS:
-  - DetectorKit (0.0.1)
+  - DetectorKit (0.0.2)
 
 DEPENDENCIES:
   - DetectorKit (from `../FRAMEWORKS/DetectorKit`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../FRAMEWORKS/DetectorKit"
 
 SPEC CHECKSUMS:
-  DetectorKit: 6b618e9145217363f11b9475967ebd9d1599f786
+  DetectorKit: 574f6d4847b1a20ed4ce8fd34f5c973ae436cba1
 
 PODFILE CHECKSUM: 65ebe2277df68b6683e6cfa0cb838cfb8a25415c
 
